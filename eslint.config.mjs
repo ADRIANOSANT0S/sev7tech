@@ -28,8 +28,8 @@ const pluginsOptions = {
 }
 
 export default [
-  { files: ['src/**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-  { ignores: ['**/node_modules', '**/dist'] },
+  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
+  { ignores: ['**/node_modules', '**/.next'] },
   {
     plugins: {
       ...pluginsOptions
