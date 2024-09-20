@@ -32,7 +32,8 @@ export default [
   { ignores: ['**/node_modules', '**/.next'] },
   {
     plugins: {
-      ...pluginsOptions
+      ...pluginsOptions,
+      '@typescript-eslint': tseslint
     }
   },
   {
