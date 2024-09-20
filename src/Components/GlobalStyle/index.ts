@@ -27,9 +27,19 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  body {
+    background-color: ${colors.black};
+  }
+
   .container {
     margin: 0 auto;
     max-width: 1440px;
     width: 90vw;
+  }
+
+  .container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 `

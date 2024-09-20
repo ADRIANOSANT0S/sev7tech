@@ -3,6 +3,8 @@ import Head from 'next/head'
 import StyledComponentsRegistry from './lib/registry'
 
 import { GlobalStyle } from '@/Components/GlobalStyle'
+import Header from '@/Components/Header'
+import PreHeader from '@/Components/PreHeader'
 
 export default function RootLayout({
   children
@@ -15,8 +17,10 @@ export default function RootLayout({
         <title>Página de suporte ao cliente</title>
       </Head>
       <body>
-        <GlobalStyle />
         <StyledComponentsRegistry>
+          <GlobalStyle />
+          <PreHeader />
+          <Header />
           <main>{children}</main>
         </StyledComponentsRegistry>
       </body>
