@@ -2,6 +2,8 @@ import Head from 'next/head'
 
 import StyledComponentsRegistry from './lib/registry'
 
+import { GlobalStyle } from '@/Components/GlobalStyle'
+
 export default function RootLayout({
   children
 }: {
@@ -13,6 +15,7 @@ export default function RootLayout({
         <title>Página de suporte ao cliente</title>
       </Head>
       <body>
+        <GlobalStyle />
         <StyledComponentsRegistry>
           <main>{children}</main>
         </StyledComponentsRegistry>
