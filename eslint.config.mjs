@@ -32,7 +32,7 @@ export default [
   {
     plugins: {
       ...pluginsOptions,
-      '@typescript-eslint': tseslint
+      '@typescript-eslint': tsesli
     }
   },
   {
