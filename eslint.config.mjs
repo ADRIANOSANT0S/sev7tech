@@ -4,7 +4,7 @@ import tseslint from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
 import importPlugin from 'eslint-plugin-import'
 import reactHooksPlugin from 'eslint-plugin-react-hooks'
-import pluginReact from 'eslint-plugin-react' // Certifique-se de importar isso
+import pluginReact from 'eslint-plugin-react'
 import prettierPlugin from 'eslint-plugin-prettier'
 import { fixupPluginRules } from '@eslint/compat'
 
@@ -12,7 +12,7 @@ const languageOptions = {
   globals: {
     ...globals.node,
     ...globals.jest,
-    React: 'readonly' // Adicione o React aqui
+    React: 'readonly'
   },
   ecmaVersion: 'latest',
   sourceType: 'module',
@@ -23,16 +23,16 @@ const pluginsOptions = {
   import: importPlugin,
   'react-hooks': fixupPluginRules(reactHooksPlugin),
   prettier: prettierPlugin,
-  react: pluginReact // Adicione o plugin React aqui
+  react: pluginReact,
+  '@typescript-eslint': tseslint
 }
 
 export default [
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-  { ignores: ['**/node_modules', '**/dist'] },
+  { ignores: ['**/node_modules', '**/.next'] },
   {
     plugins: {
-      ...pluginsOptions,
-      '@typescript-eslint': tsesli
+      ...pluginsOptions
     }
   },
   {
