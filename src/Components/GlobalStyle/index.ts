@@ -8,15 +8,6 @@ const jost = Jost({
   display: 'swap'
 })
 
-export const colors = {
-  blue: '#0A2540',
-  lightBlues: '#3A7CA5',
-  gold: '#C5A880',
-  black: '#000000',
-  grey: '#7A7A7A',
-  white: '#FFFFFF'
-}
-
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -27,9 +18,24 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
+  body {
+    background-color: ${({ theme }) => theme.bgBody};
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
   .container {
     margin: 0 auto;
     max-width: 1440px;
     width: 90vw;
+  }
+
+  .container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .show {
+    display: block;
   }
 `

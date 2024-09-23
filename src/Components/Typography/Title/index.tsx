@@ -1,11 +1,12 @@
 import { TitleContainer } from './styles'
 
-type Prop = {
+export type Prop = {
   children: string
+  as: 'h1' | 'h2' | 'h3' | 'h4'
 }
 
-const Title = ({ children }: Prop) => {
-  return <TitleContainer as="h2">{children}</TitleContainer>
+const Title = ({ children, as }: Prop) => {
+  return <TitleContainer as={as}>{children}</TitleContainer>
 }
 
 export default Title
