@@ -6,10 +6,13 @@ import { useState } from 'react'
 
 import StyledComponentsRegistry from './lib/registry'
 
+// Components Layout config
 import { GlobalStyle } from '@/Components/GlobalStyle'
 import { theme } from '@/Components/GlobalStyle/theme'
+// Components JSX
 import Header from '@/Components/Header'
 import PreHeader from '@/Components/PreHeader'
+import Footer from '@/Components/Footer'
 
 export default function RootLayout({
   children
@@ -34,6 +37,7 @@ export default function RootLayout({
             <PreHeader />
             <Header onToggle={toggleTheme} isThemeLight={isLightMode} />
             <main>{children}</main>
+            <Footer />
           </ThemeProvider>
         </StyledComponentsRegistry>
       </body>

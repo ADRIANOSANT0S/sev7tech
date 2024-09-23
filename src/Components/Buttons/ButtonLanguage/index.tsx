@@ -5,7 +5,7 @@ import * as S from './styles'
 
 import { Text } from '@/Components/Typography'
 
-export default function App() {
+const ButtonLanguages = () => {
   const options = [
     {
       value: 'PT',
@@ -21,14 +21,15 @@ export default function App() {
     }
   ]
 
-  const [lang, setLang] = useState('PT')
-  const [langLabel, setLangLabel] = useState(options[0].label)
+  const [lang, setLang] = useState('EN')
+  const [langLabel, setLangLabel] = useState(options[1].label)
   const [menuOpen, setMenuOpen] = useState(false)
 
+  // Render language and close the menu
   function handleClick(n: number) {
     setLangLabel(options[n].label)
     setLang(options[n].value)
-    setMenuOpen(false) // fecha o menu ao clicar
+    setMenuOpen(false)
   }
 
   return (
@@ -56,3 +57,5 @@ export default function App() {
     </div>
   )
 }
+
+export default ButtonLanguages

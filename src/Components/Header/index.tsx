@@ -1,6 +1,6 @@
-'use client'
+import Image from 'next/image'
 
-import { LinkItem, Title } from '../Typography'
+import { LinkItem } from '../Typography'
 import ButtonSwitch from '../Buttons/ButtonTheme'
 import * as S from './styles'
 import ButtonLanguage from '../Buttons/ButtonLanguage'
@@ -18,7 +18,12 @@ const Header = ({ onToggle, isThemeLight }: Prop) => {
   return (
     <S.HeaderContainer className={scrollY > 172 ? 'fixedContainer' : ''}>
       <div className="container-flex container">
-        <Title as="h1">Sev7Tech</Title>
+        <Image
+          src="/image/star.png"
+          alt="Image test size logo"
+          width={200}
+          height={48}
+        />
         <S.NavContainer>
           <ul>
             <li>

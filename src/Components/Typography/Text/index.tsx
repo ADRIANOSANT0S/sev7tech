@@ -1,7 +1,9 @@
+import { ReactNode } from 'react'
+
 import { TextContainer } from './styles'
 
 type Props = {
-  children: string
+  children: string | ReactNode
   as: 'p' | 'span'
 }
 

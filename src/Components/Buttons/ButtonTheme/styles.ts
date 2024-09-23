@@ -23,7 +23,7 @@ export const StyledWrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${({ theme }) => theme.buttonTeme};
+    background-color: ${({ theme }) => theme.buttonTheme}; /* Corrigido */
     transition: 0.5s;
     border-radius: 50%;
     display: flex;
@@ -45,10 +45,5 @@ export const StyledWrapper = styled.div`
     content: '🌙';
     rotate: 100deg;
     font-size: 18px;
-  }
-
-  input:checked + .slider {
-    background-color: ${({ theme }) => theme.primaryText};
-    transition: background-color 0.3s ease-in;
   }
 `

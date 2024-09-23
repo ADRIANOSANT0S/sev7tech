@@ -6,7 +6,7 @@ import { colors } from '../GlobalStyle/theme'
 
 export const PreHeaderContainer = styled.div`
   background-color: ${({ theme }) => theme.bgPreHeader};
-  padding: 8px 0;
+  padding: 4px 0;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
@@ -29,6 +29,11 @@ export const PreHeaderContainer = styled.div`
       color: ${colors.goldAccent};
       transition: color 0.2s ease-in;
     }
+  }
+
+  .container-flex {
+    gap: 8px;
+    padding: 2px;
   }
 
   &.hideContainer {

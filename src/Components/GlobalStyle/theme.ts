@@ -12,6 +12,7 @@ export const colors = {
 
 export const theme = {
   light: {
+    mode: 'light',
     primary: colors.pureWhite,
     secondary: colors.twilightBlue,
 
@@ -19,9 +20,10 @@ export const theme = {
     bgBody: colors.pureWhite,
     bgPreHeader: colors.deepOcean,
     bgHeader: colors.twilightBlue,
+    bgFooter: colors.deepOcean,
 
     // Button Theme Background
-    buttonTeme: colors.deepOcean,
+    buttonTheme: colors.deepOcean,
 
     // Color text
     primaryText: colors.twilightBlue,
@@ -35,16 +37,18 @@ export const theme = {
     lightBlue: colors.skyColor
   },
   dark: {
+    mode: 'dark',
     primary: colors.twilightBlue,
     secondary: colors.pureWhite,
 
     // Background
     bgBody: colors.deepOcean,
-    bgPreHeader: colors.twilightBlue,
-    bgHeader: colors.navy,
+    bgPreHeader: colors.navy,
+    bgHeader: colors.twilightBlue,
+    bgFooter: colors.navy,
 
     // Button Theme Background
-    buttonTeme: colors.twilightBlue,
+    buttonTheme: colors.deepOcean,
 
     // Color text
     primaryText: colors.twilightBlue,
