@@ -1,13 +1,22 @@
 'use client'
 
 import { LinkItem, Title } from '../Typography'
-import ButtonSwitch from '../Buttons/ButtonSwitch'
+import ButtonSwitch from '../Buttons/ButtonTheme'
 import * as S from './styles'
 import ButtonLanguage from '../Buttons/ButtonLanguage'
 
-const Header = () => {
+import useWindowScrollY from '@/utils/getScrollY'
+
+type Prop = {
+  onToggle: () => void
+  isThemeLight: boolean
+}
+
+const Header = ({ onToggle, isThemeLight }: Prop) => {
+  const scrollY = useWindowScrollY()
+
   return (
-    <S.HeaderContainer>
+    <S.HeaderContainer className={scrollY > 172 ? 'fixedContainer' : ''}>
       <div className="container-flex container">
         <Title as="h1">Sev7Tech</Title>
         <S.NavContainer>
@@ -31,7 +40,7 @@ const Header = () => {
         </S.NavContainer>
         <div className="container-flex">
           <ButtonLanguage />
-          <ButtonSwitch />
+          <ButtonSwitch onClick={onToggle} isChecked={isThemeLight} />
         </div>
       </div>
     </S.HeaderContainer>

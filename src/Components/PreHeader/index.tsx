@@ -3,9 +3,13 @@ import { FaInstagram, FaFacebook, FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { LinkItem, Text } from '../Typography'
 import { PreHeaderContainer } from './styles'
 
+import useWindowScrollY from '@/utils/getScrollY'
+
 const PreHeader = () => {
+  const scrollY = useWindowScrollY()
+
   return (
-    <PreHeaderContainer>
+    <PreHeaderContainer className={scrollY < 44 ? 'show' : 'hideContainer'}>
       <div className="container container-flex">
         <LinkItem href="to:+5511949793490" className="container-flex">
           <FaWhatsapp />

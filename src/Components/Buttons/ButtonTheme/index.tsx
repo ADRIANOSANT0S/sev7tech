@@ -1,10 +1,17 @@
+'use client'
+
 import * as S from './styles'
 
-const Switch = () => {
+type Prop = {
+  onClick: () => void
+  isChecked: boolean
+}
+
+const Switch = ({ onClick, isChecked }: Prop) => {
   return (
     <S.StyledWrapper>
       <label className="switch">
-        <input type="checkbox" />
+        <input type="checkbox" checked={isChecked} onChange={onClick} />
         <span className="slider" />
       </label>
     </S.StyledWrapper>

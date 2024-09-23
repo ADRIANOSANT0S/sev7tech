@@ -8,15 +8,6 @@ const jost = Jost({
   display: 'swap'
 })
 
-export const colors = {
-  blue: '#0A2540',
-  lightBlues: '#3A7CA5',
-  gold: '#C5A880',
-  black: '#000000',
-  grey: '#7A7A7A',
-  white: '#FFFFFF'
-}
-
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -28,7 +19,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${colors.black};
+    background-color: ${({ theme }) => theme.bgBody};
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   .container {
@@ -41,5 +33,9 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .show {
+    display: block;
   }
 `

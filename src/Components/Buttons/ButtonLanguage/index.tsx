@@ -1,47 +1,58 @@
-'use client'
-
 import React, { useState } from 'react'
-import Select from 'react-select'
+import { FaCaretDown } from 'react-icons/fa'
 
-interface LanguageOption {
-  value: string
-  label: string
-  img: string
-}
+import * as S from './styles'
 
-const options: LanguageOption[] = [
-  { value: 'pt', label: 'PT', img: '/image/brazil.png' },
-  { value: 'en', label: 'EN', img: '/image/USA.png' },
-  { value: 'es', label: 'ES', img: '/image/Spenish.png' }
-]
+import { Text } from '@/Components/Typography'
 
-const LanguageDropdown: React.FC = () => {
-  const [selectedLanguage, setSelectedLanguage] =
-    useState<LanguageOption | null>(null)
+export default function App() {
+  const options = [
+    {
+      value: 'PT',
+      label: <S.FlagImage src={'/image/pt.png'} alt="PT flag" />
+    },
+    {
+      value: 'EN',
+      label: <S.FlagImage src={'/image/en.png'} alt="EN flag" />
+    },
+    {
+      value: 'ES',
+      label: <S.FlagImage src={'/image/es.png'} alt="ES flag" />
+    }
+  ]
 
-  const handleChange = (selectedOption: LanguageOption | null) => {
-    setSelectedLanguage(selectedOption)
+  const [lang, setLang] = useState('PT')
+  const [langLabel, setLangLabel] = useState(options[0].label)
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  function handleClick(n: number) {
+    setLangLabel(options[n].label)
+    setLang(options[n].value)
+    setMenuOpen(false) // fecha o menu ao clicar
   }
 
-  const formatOptionLabel = ({ img, label }: LanguageOption) => (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <img
-        src={img}
-        alt={label}
-        style={{ width: 20, height: 20, marginRight: 10 }}
-      />
-      {label}
+  return (
+    <div>
+      <S.DropdownContainer>
+        <S.DropdownToggle onClick={() => setMenuOpen(!menuOpen)}>
+          {langLabel} <Text as="span">{lang}</Text> <FaCaretDown />
+        </S.DropdownToggle>
+        {menuOpen && (
+          <S.DropdownMenu>
+            <S.DropdownItem onClick={() => handleClick(0)}>
+              {options[0].label} <Text as="span">{options[0].value}</Text>
+            </S.DropdownItem>
+            <S.DropdownItem onClick={() => handleClick(1)}>
+              {options[1].label}
+              <Text as="span">{options[1].value}</Text>
+            </S.DropdownItem>
+            <S.DropdownItem onClick={() => handleClick(2)}>
+              {options[2].label}
+              <Text as="span">{options[2].value}</Text>
+            </S.DropdownItem>
+          </S.DropdownMenu>
+        )}
+      </S.DropdownContainer>
     </div>
   )
-
-  return (
-    <Select
-      value={selectedLanguage}
-      onChange={handleChange}
-      options={options}
-      formatOptionLabel={formatOptionLabel}
-    />
-  )
 }
-
-export default LanguageDropdown

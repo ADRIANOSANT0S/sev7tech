@@ -3,7 +3,6 @@
 import { styled } from 'styled-components'
 
 import { pxToEm } from '@/utils/stringUtils'
-import { colors } from '@/Components/GlobalStyle'
 
 interface TitleType {
   colorTitle?: 'b' | 'g'
@@ -27,10 +26,11 @@ export const TitleContainer = styled.h2<TitleType>`
           ? '32px'
           : '28px'};
   font-weight: ${(prop) => (prop.as === 'h4' ? 600 : 700)};
-  color: ${(prop) =>
-    prop.colorTitle === 'b'
-      ? colors.black
-      : prop.colorTitle === 'g'
-        ? colors.gold
-        : colors.white};
+  color: ${({ colorTitle, theme }) =>
+    colorTitle === 'b'
+      ? theme.primaryText
+      : colorTitle === 'g'
+        ? theme.button
+        : theme.secondaryText};
+  transition: color 0.3s ease;
 `
