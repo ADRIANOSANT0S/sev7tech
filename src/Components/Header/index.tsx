@@ -30,16 +30,16 @@ const Header = ({ onToggle, isThemeLight }: Prop) => {
               <LinkItem href="/">Home</LinkItem>
             </li>
             <li>
-              <LinkItem href="/About">About</LinkItem>
+              <LinkItem href="/about">About</LinkItem>
             </li>
             <li>
-              <LinkItem href="/Projects">Projects</LinkItem>
+              <LinkItem href="/projects">Projects</LinkItem>
             </li>
             <li>
-              <LinkItem href="/Products">Products</LinkItem>
+              <LinkItem href="/products">Products</LinkItem>
             </li>
             <li>
-              <LinkItem href="/Contact">Contact</LinkItem>
+              <LinkItem href="/contact">Contact</LinkItem>
             </li>
           </ul>
         </S.NavContainer>

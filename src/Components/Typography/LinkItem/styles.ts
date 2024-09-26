@@ -1,11 +1,11 @@
 'use client'
 
-import Link from 'next/link'
 import styled from 'styled-components'
 import { lighten } from 'polished'
 
 import { colors } from './../../GlobalStyle/theme'
 
+import { Link } from '@/i18n/routing'
 import { pxToEm } from '@/utils/stringUtils'
 
 export const LinkContainer = styled(Link)`

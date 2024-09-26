@@ -2,13 +2,11 @@
 
 import { styled } from 'styled-components'
 
+import { Props } from '.'
+
 import { pxToEm } from '@/utils/stringUtils'
 
-interface TitleType {
-  colorTitle?: 'b' | 'g'
-}
-
-export const TitleContainer = styled.h2<TitleType>`
+export const TitleContainer = styled.h2<Omit<Props, 'children' | 'as'>>`
   font-size: ${(prop) =>
     prop.as === 'h1'
       ? pxToEm(56)

@@ -1,11 +1,17 @@
+'use client'
+
 import React, { useState } from 'react'
 import { FaCaretDown } from 'react-icons/fa'
+import { usePathname, useRouter } from 'next/navigation'
 
 import * as S from './styles'
 
 import { Text } from '@/Components/Typography'
 
 const ButtonLanguages = () => {
+  const router = useRouter()
+  const pathname = usePathname()
+
   const options = [
     {
       value: 'PT',
@@ -21,36 +27,54 @@ const ButtonLanguages = () => {
     }
   ]
 
-  const [lang, setLang] = useState('EN')
-  const [langLabel, setLangLabel] = useState(options[1].label)
+  const [langLabel, setLangLabel] = useState(options[0].label) // Padrão: 'EN'
   const [menuOpen, setMenuOpen] = useState(false)
 
   // Render language and close the menu
   function handleClick(n: number) {
+    const selectedLang = options[n].value.toLowerCase()
     setLangLabel(options[n].label)
-    setLang(options[n].value)
     setMenuOpen(false)
+
+    // Extrai o idioma atual da URL, assumindo que o idioma é o primeiro segmento da URL
+    const segments = pathname.split('/').filter(Boolean)
+
+    if (['en', 'pt', 'es'].includes(segments[0])) {
+      segments[0] = selectedLang // Substitui o idioma
+    } else {
+      segments.unshift(selectedLang) // Adiciona o idioma se não estiver presente
+    }
+
+    // Reconstrói a URL com o idioma correto
+    const newPath = `/${segments.join('/')}`
+    router.push(newPath)
   }
 
   return (
     <div>
       <S.DropdownContainer>
         <S.DropdownToggle onClick={() => setMenuOpen(!menuOpen)}>
-          {langLabel} <Text as="span">{lang}</Text> <FaCaretDown />
+          {langLabel}{' '}
+          <Text as="span">
+            {options
+              .find(
+                (option) =>
+                  option.value.toLowerCase() === pathname.split('/')[1]
+              )
+              ?.value.toUpperCase()}
+          </Text>
+          <FaCaretDown />
         </S.DropdownToggle>
         {menuOpen && (
           <S.DropdownMenu>
-            <S.DropdownItem onClick={() => handleClick(0)}>
-              {options[0].label} <Text as="span">{options[0].value}</Text>
-            </S.DropdownItem>
-            <S.DropdownItem onClick={() => handleClick(1)}>
-              {options[1].label}
-              <Text as="span">{options[1].value}</Text>
-            </S.DropdownItem>
-            <S.DropdownItem onClick={() => handleClick(2)}>
-              {options[2].label}
-              <Text as="span">{options[2].value}</Text>
-            </S.DropdownItem>
+            {options.map((option, index) => (
+              <S.DropdownItem
+                key={option.value}
+                onClick={() => handleClick(index)}
+              >
+                {option.label} <Text as="span">{option.value}</Text>
+              </S.DropdownItem>
+            ))}
           </S.DropdownMenu>
         )}
       </S.DropdownContainer>

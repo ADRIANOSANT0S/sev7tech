@@ -16,6 +16,7 @@ export const FooterContainer = styled.footer`
   .container:first-child {
     padding: 100px 0;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     > div {
       max-width: 272px;
