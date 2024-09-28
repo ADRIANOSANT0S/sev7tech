@@ -7,14 +7,13 @@ export const HeaderContainer = styled.header`
   background-color: ${({ theme }) =>
     theme.bgHeader}; // Usar a cor de fundo do tema
   color: ${({ theme }) => theme.primaryText};
-
   box-shadow: 0px 21px 49px -14px ${({ theme }) => theme.shadow};
+  z-index: 100;
 
   &.fixedContainer {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 10;
   }
 
   &.container-flex {

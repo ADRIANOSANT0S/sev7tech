@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { FaCaretDown } from 'react-icons/fa'
 import { usePathname, useRouter } from 'next/navigation'
 
@@ -12,23 +12,41 @@ const ButtonLanguages = () => {
   const router = useRouter()
   const pathname = usePathname()
 
-  const options = [
-    {
-      value: 'PT',
-      label: <S.FlagImage src={'/image/pt.png'} alt="PT flag" />
-    },
-    {
-      value: 'EN',
-      label: <S.FlagImage src={'/image/en.png'} alt="EN flag" />
-    },
-    {
-      value: 'ES',
-      label: <S.FlagImage src={'/image/es.png'} alt="ES flag" />
-    }
-  ]
+  const options = useMemo(
+    () => [
+      {
+        value: 'EN',
+        label: <S.FlagImage src={'/image/en.png'} alt="EN flag" />
+      },
+      {
+        value: 'PT',
+        label: <S.FlagImage src={'/image/pt.png'} alt="PT flag" />
+      },
+      {
+        value: 'ES',
+        label: <S.FlagImage src={'/image/es.png'} alt="ES flag" />
+      }
+    ],
+    []
+  )
 
-  const [langLabel, setLangLabel] = useState(options[0].label) // Padrão: 'EN'
+  // Estado inicial definido como nulo para que seja atualizado no useEffect
+  const [langLabel, setLangLabel] = useState<React.ReactNode>(null)
   const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    // Extrai o idioma da URL e define a bandeira correta com base nisso
+    const currentLang = pathname.split('/')[1]?.toLowerCase() || 'en'
+
+    // Busca o rótulo de idioma correspondente
+    const selectedOption = options.find(
+      (option) => option.value.toLowerCase() === currentLang
+    )
+
+    if (selectedOption) {
+      setLangLabel(selectedOption.label)
+    }
+  }, [pathname, options]) // Executa sempre que o pathname mudar
 
   // Render language and close the menu
   function handleClick(n: number) {
@@ -54,7 +72,7 @@ const ButtonLanguages = () => {
     <div>
       <S.DropdownContainer>
         <S.DropdownToggle onClick={() => setMenuOpen(!menuOpen)}>
-          {langLabel}{' '}
+          {langLabel}
           <Text as="span">
             {options
               .find(

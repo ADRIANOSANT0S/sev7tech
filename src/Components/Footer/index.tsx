@@ -30,22 +30,37 @@ export const Footer = () => {
           <Title as="h3">IT Solution</Title>
           <ul>
             <li>
-              <LinkItem href="/">
-                <LuChevronsRight />
-                SEO Optimization
-              </LinkItem>
+              <LuChevronsRight />
+              <LinkItem href="/">SEO Optimization</LinkItem>
             </li>
             <li>
-              <LinkItem href="/">
-                <LuChevronsRight />
-                Web Development
-              </LinkItem>
+              <LuChevronsRight />
+              <LinkItem href="/">Web Development</LinkItem>
             </li>
             <li>
-              <LinkItem href="/">
-                <LuChevronsRight />
-                Web Design
-              </LinkItem>
+              <LuChevronsRight />
+              <LinkItem href="/">Web Design</LinkItem>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <Title as="h3">Quick Link</Title>
+          <ul>
+            <li>
+              <LuChevronsRight />
+              <LinkItem href="/">About Sev7Tech</LinkItem>
+            </li>
+            <li>
+              <LuChevronsRight />
+              <LinkItem href="/">Our Services</LinkItem>
+            </li>
+            <li>
+              <LuChevronsRight />
+              <LinkItem href="/">Our Projects</LinkItem>
+            </li>
+            <li>
+              <LuChevronsRight />
+              <LinkItem href="/">Our Products</LinkItem>
             </li>
           </ul>
         </div>
