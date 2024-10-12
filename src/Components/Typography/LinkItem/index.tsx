@@ -1,9 +1,7 @@
-import { ReactNode } from 'react'
-
 import { LinkContainer } from './styles'
 
 export type Props = {
-  children: string | ReactNode
+  children: string | React.ReactNode
   href: string
   className?: string
 }

@@ -21,6 +21,9 @@ export const theme = {
     bgPreHeader: colors.deepOcean,
     bgHeader: colors.twilightBlue,
     bgFooter: colors.deepOcean,
+    bgCardService: colors.twilightBlue,
+    bgSvg: colors.deepOcean,
+    bgCardInfos: colors.navy,
 
     // Button Theme Background
     buttonTheme: colors.deepOcean,
@@ -46,13 +49,16 @@ export const theme = {
     bgPreHeader: colors.navy,
     bgHeader: colors.twilightBlue,
     bgFooter: colors.navy,
+    bgCardService: colors.twilightBlue,
+    bgSvg: colors.deepOcean,
+    bgCardInfos: colors.twilightBlue,
 
     // Button Theme Background
     buttonTheme: colors.deepOcean,
 
     // Color text
-    primaryText: colors.twilightBlue,
-    secondaryText: colors.pureWhite,
+    primaryText: colors.pureWhite,
+    secondaryText: colors.twilightBlue,
 
     //box-shadow
     shadow: colors.blueRgba,

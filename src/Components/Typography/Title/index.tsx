@@ -1,7 +1,7 @@
 import { TitleContainer } from './styles'
 
 export type Props = {
-  children: string
+  children: string | React.ReactNode
   as: 'h1' | 'h2' | 'h3' | 'h4'
   colorTitle?: 'b' | 'g'
 }

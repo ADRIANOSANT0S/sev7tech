@@ -1,6 +1,28 @@
 {
-  "HomePage": {
-    "title": "?Bom Jornos Globo?!",
-    "about": "?Ir pra home?"
+  "Header": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "products": "Productos",
+    "contact": "Contacto"
+  },
+  "Footer": {
+    "itSolution": "Solución de TI",
+    "seoOptimization": "Optimización SEO",
+    "webDevelopment": "Desarrollo Web",
+    "webDesign": "Diseño Web",
+    "quickLink": "Enlace Rápido",
+    "aboutSev7Tech": "Acerca de Sev7Tech",
+    "ourServices": "Nuestros Servicios",
+    "ourProjects": "Nuestros Proyectos",
+    "ourProducts": "Nuestros Productos",
+    "contactUs": "Contáctenos:",
+    "openingHours": "Horario de Apertura:",
+    "openingDay": "Lun-Sáb: 12:00 PM - 7:00 PM",
+    "contacts": "Contactos:",
+    "copyright": "© Todos los derechos reservados {currentYear} por Sev7Tech",
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad"
   }
 }

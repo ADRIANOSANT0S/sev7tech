@@ -7,16 +7,21 @@ import { Props } from '.'
 
 import { colors } from '@/Components/GlobalStyle/theme'
 
-export const BgImage = styled.div<Props>`
+// Omite  proprieties that are not used the component
+type OmitElementProps = Omit<
+  Props,
+  'title' | 'details' | 'goTo' | 'title2' | 'children'
+>
+
+export const BgImage = styled.div<OmitElementProps>`
   display: flex;
   justify-content: center;
   position: relative;
   padding: 40px 30px;
-  background-image: url(${(prop) => prop.url});
-
   max-width: 368px;
   height: 340px;
   border-radius: 8px;
+  background-image: url(${(prop) => prop.url});
 
   div:first-child {
     display: flex;
@@ -27,15 +32,12 @@ export const BgImage = styled.div<Props>`
     width: 100%;
     z-index: 10;
     opacity: 0;
-    transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
     > svg {
       background-color: ${colors.deepOcean};
-      transition: background-color 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-
       color: ${colors.goldAccent};
-      margin-right: 8px;
-      padding-right: 8px;
+      padding: 8px;
+      border-radius: 8px;
     }
 
     h4,
@@ -49,28 +51,32 @@ export const BgImage = styled.div<Props>`
     }
   }
 
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    top: 100%;
+    border-radius: 8px;
+    background: linear-gradient(to right, #7c3aed, #4f46e5);
+    opacity: 0;
+    transition: transform 0.3s ease-out;
+  }
+
   &:hover {
     div:first-child {
       opacity: 1;
-      transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: opacity 0.3s ease-in;
     }
 
     div:last-child {
       opacity: 0;
-      transition: opacity 0.1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: opacity 0.1s ease-out;
     }
 
     &::before {
-      position: absolute;
-      content: '';
       top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: blue;
-      transition: background-color 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-
-      border-radius: 8px;
+      opacity: 1;
+      transition: top 0.3s ease-out;
     }
   }
 `
@@ -85,8 +91,7 @@ export const Description = styled.div`
   bottom: -32px;
   z-index: 100;
   opacity: 1;
-  transition: opacity 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  transition: background-color 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: opacity 0.3s ease-in;
 
   svg {
     display: flex;

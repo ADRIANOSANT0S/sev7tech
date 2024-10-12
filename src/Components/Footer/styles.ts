@@ -20,11 +20,11 @@ export const FooterContainer = styled.footer`
 
     > div {
       max-width: 272px;
+    }
 
-      img,
-      h3 {
-        margin-bottom: 32px;
-      }
+    img,
+    h3 {
+      margin-bottom: 32px;
     }
 
     // Style container IT
@@ -45,8 +45,7 @@ export const FooterContainer = styled.footer`
       }
     }
 
-    // Style div contact
-    > div:last-child {
+    address {
       > div {
         margin-bottom: 8px;
       }
