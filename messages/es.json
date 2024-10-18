@@ -9,9 +9,22 @@
   },
   "ButtonLinkTexts": {
     "seeAll": {
-      "title": "Haz clic aquí para ver todos los servicios que o frecemos",
+      "title": "Haz clic aquí para ver todos los servicios que o frecemos.",
       "content": "Ver Todos servicios"
+    },
+    "buttonSubmit": {
+      "title": "Haga clic para enviar su consulta.",
+      "content": "Enviar Consulta"
     }
+  },
+  "Form": {
+    "firstName": "Primer Nombre",
+    "lastName": "Apellido",
+    "phone": "Teléfono (WhatsApp)",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "terms": "Estoy de acuerdo con la",
+    "privacyPolicy": "política de privacidad."
   },
   "Footer": {
     "itSolution": "Solución de TI",

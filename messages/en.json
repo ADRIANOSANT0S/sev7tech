@@ -11,7 +11,20 @@
     "seeAll": {
       "title": "Click here to view all the services we offer",
       "content": "See All Services"
+    },
+    "buttonSubmit": {
+      "title": "Click to submit your Inquiry",
+      "content": "Send Inquiry"
     }
+  },
+  "Form": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone (WhatsApp)",
+    "email": "E-mail",
+    "message": "Message",
+    "terms": "I agree to the",
+    "privacyPolicy": "privacy policy."
   },
   "Footer": {
     "itSolution": "IT Solution",

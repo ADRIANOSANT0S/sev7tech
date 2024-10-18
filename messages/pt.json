@@ -11,7 +11,20 @@
     "seeAll": {
       "title": "Clique aqui para ver todos os serviços",
       "content": "Ver Todos Serviços"
+    },
+    "buttonSubmit": {
+      "title": "Clique para enviar sua solicitação",
+      "content": "Enviar Solicitação"
     }
+  },
+  "Form": {
+    "firstName": "Primeiro Nome",
+    "lastName": "Sobrenome",
+    "phone": "Telefone (WhatsApp)",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "terms": "Eu concordo com a",
+    "privacyPolicy": "política de privacidade."
   },
   "Footer": {
     "itSolution": "Solução de TI",
