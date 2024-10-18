@@ -7,6 +7,12 @@
     "products": "Produtos",
     "contact": "Contato"
   },
+  "ButtonLinkTexts": {
+    "seeAll": {
+      "title": "Clique aqui para ver todos os serviços",
+      "content": "Ver Todos Serviços"
+    }
+  },
   "Footer": {
     "itSolution": "Solução de TI",
     "seoOptimization": "Otimização de SEO",

@@ -2,14 +2,23 @@
 
 import styled from 'styled-components'
 
-import { Props } from '.'
-
-export const SectionBanner = styled.section<Omit<Props, 'children'>>`
-  height: auto;
+export const BannerContainer = styled.section`
+  position: relative;
+  min-height: 588px;
   width: 100vw;
-  object-fit: fill;
-  background-image: url(${(prop) => prop.url});
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 120px 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
 `

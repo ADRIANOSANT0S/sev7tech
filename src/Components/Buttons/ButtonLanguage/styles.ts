@@ -5,15 +5,20 @@ import { colors } from './../../GlobalStyle/theme'
 export const DropdownContainer = styled.div`
   position: relative;
   display: inline-block;
+
+  span {
+    display: none;
+  }
 `
 
 export const DropdownToggle = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: none;
   padding: 10px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
   margin-right: 16px;
 
   font-size: 16px;
@@ -22,7 +27,8 @@ export const DropdownToggle = styled.button`
 
   svg {
     color: ${colors.goldAccent};
-    margin-left: 4px;
+    width: 100%;
+    margin-left: 8px;
   }
 `
 
@@ -34,15 +40,17 @@ export const DropdownMenu = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 80px;
+  width: 56px;
   border: 1px solid ${colors.charcoal};
 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease-in;
+  z-index: 2;
 `
 
 export const DropdownItem = styled.li`
   position: relative;
+  text-align: center;
   padding: 8px;
   cursor: pointer;
   color: ${({ theme }) => theme.pureWhite};
@@ -58,5 +66,4 @@ export const DropdownItem = styled.li`
 
 export const FlagImage = styled.img`
   width: 20px;
-  margin-right: 8px;
 `

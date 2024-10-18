@@ -1,13 +1,13 @@
 import * as S from './styles'
 export type Props = {
-  url: string
-  children: React.ReactNode
+  urlImage: string
+  children?: React.ReactNode
 }
-const Banner = ({ url, children }: Props) => {
+const Banner = ({ urlImage, children }: Props) => {
   return (
-    <S.SectionBanner url={url}>
+    <S.BannerContainer style={{ backgroundImage: `url(${urlImage})` }}>
       <div className="container">{children}</div>
-    </S.SectionBanner>
+    </S.BannerContainer>
   )
 }
 

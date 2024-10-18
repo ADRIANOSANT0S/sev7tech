@@ -90,7 +90,7 @@ const ButtonLanguages = () => {
                 key={option.value}
                 onClick={() => handleClick(index)}
               >
-                {option.label} <Text as="span">{option.value}</Text>
+                {option.label}
               </S.DropdownItem>
             ))}
           </S.DropdownMenu>

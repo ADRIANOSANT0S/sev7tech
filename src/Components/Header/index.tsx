@@ -6,7 +6,7 @@ import ButtonSwitch from '../Buttons/ButtonTheme'
 import * as S from './styles'
 import ButtonLanguage from '../Buttons/ButtonLanguage'
 
-import useWindowScrollY from '@/utils/getScrollY'
+import useWindowScrollY from '@/hooks/useWindowScrollY'
 
 type Prop = {
   onToggle: () => void

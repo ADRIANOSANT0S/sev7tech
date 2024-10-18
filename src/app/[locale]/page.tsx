@@ -1,11 +1,5 @@
-import Home from './Home'
+import Home from './home'
 
-const HomePage = () => {
-  return (
-    <div>
-      <Home />
-    </div>
-  )
-}
+const HomePage = () => <Home />
 
 export default HomePage
