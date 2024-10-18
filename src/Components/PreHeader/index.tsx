@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebook, FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { LinkItem, Text } from '../Typography'
 import { PreHeaderContainer } from './styles'
 
-import useWindowScrollY from '@/utils/getScrollY'
+import useWindowScrollY from '@/hooks/useWindowScrollY'
 
 const PreHeader = () => {
   const scrollY = useWindowScrollY()

@@ -2,11 +2,15 @@ import Image from 'next/image'
 import { LuChevronsRight } from 'react-icons/lu'
 import { FaWhatsapp } from 'react-icons/fa'
 import { MdOutlineAccessTime, MdOutlineMail } from 'react-icons/md'
+import { useTranslations } from 'next-intl'
 
 import { LinkItem, Text, Title } from '../Typography'
 import * as S from './styles'
 
 export const Footer = () => {
+  const t = useTranslations('Footer')
+
+  // Get current year
   const currentYear = new Date().getFullYear()
 
   return (
@@ -27,40 +31,54 @@ export const Footer = () => {
           </Text>
         </div>
         <div>
-          <Title as="h3">IT Solution</Title>
+          <Title as="h3">{t('itSolution')}</Title>
           <ul>
             <li>
-              <LinkItem href="/">
-                <LuChevronsRight />
-                SEO Optimization
-              </LinkItem>
+              <LuChevronsRight />
+              <LinkItem href="/">{t('seoOptimization')}</LinkItem>
             </li>
             <li>
-              <LinkItem href="/">
-                <LuChevronsRight />
-                Web Development
-              </LinkItem>
+              <LuChevronsRight />
+              <LinkItem href="/">{t('webDevelopment')}</LinkItem>
             </li>
             <li>
-              <LinkItem href="/">
-                <LuChevronsRight />
-                Web Design
-              </LinkItem>
+              <LuChevronsRight />
+              <LinkItem href="/">{t('webDesign')}</LinkItem>
             </li>
           </ul>
         </div>
         <div>
+          <Title as="h3">{t('quickLink')}</Title>
+          <ul>
+            <li>
+              <LuChevronsRight />
+              <LinkItem href="/">{t('aboutSev7Tech')}</LinkItem>
+            </li>
+            <li>
+              <LuChevronsRight />
+              <LinkItem href="/">{t('ourServices')}</LinkItem>
+            </li>
+            <li>
+              <LuChevronsRight />
+              <LinkItem href="/">{t('ourProjects')}</LinkItem>
+            </li>
+            <li>
+              <LuChevronsRight />
+              <LinkItem href="/">{t('ourProducts')}</LinkItem>
+            </li>
+          </ul>
+        </div>
+        <address>
           <div>
-            <Title as="h3">Contact Us</Title>
+            <Title as="h3">{t('contactUs')}</Title>
             <div>
-              <Title as="h4">Opening Hours:</Title>
-              <MdOutlineAccessTime />{' '}
-              <Text as="span">Mon-Sat: 12.00 PM - 7.00 PM</Text>
+              <Title as="h4">{t('openingHours')}</Title>
+              <MdOutlineAccessTime /> <Text as="span">{t('openingDay')}</Text>
             </div>
           </div>
           <div>
             <div>
-              <Title as="h4">Contacts:</Title>
+              <Title as="h4">{t('contactUs')}</Title>
               <ul>
                 <li>
                   <FaWhatsapp />
@@ -73,16 +91,16 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </address>
       </div>
       <div className="container container-flex">
-        <Text as="p">&copy; All copyright {currentYear} by Sev7Tech </Text>
+        <Text as="p">{t('copyright', { currentYear })}</Text>
         <ul className="container-flex">
           <li>
-            <LinkItem href="/">Terms & Condition</LinkItem>
+            <LinkItem href="/">{t('terms')}</LinkItem>
           </li>
           <li>
-            <LinkItem href="/">Privacy Policy</LinkItem>
+            <LinkItem href="/">{t('privacy')}</LinkItem>
           </li>
         </ul>
       </div>

@@ -1,15 +1,15 @@
-import { ReactNode } from 'react'
-
 import { TextContainer } from './styles'
 
-type Props = {
-  children: string | ReactNode
+export type Props = {
+  children: string | React.ReactNode
   as: 'p' | 'span'
+  size?: 'small' | 'normal'
+  weightText?: 'b'
 }
 
-const Text = ({ children, as = 'p' }: Props) => {
+const Text = ({ children, as = 'p', size = 'normal', weightText }: Props) => {
   return (
-    <TextContainer as={as} size="normal">
+    <TextContainer as={as} size={size} weightText={weightText}>
       {children}
     </TextContainer>
   )

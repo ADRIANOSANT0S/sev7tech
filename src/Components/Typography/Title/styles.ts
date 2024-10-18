@@ -26,9 +26,9 @@ export const TitleContainer = styled.h2<Omit<Props, 'children' | 'as'>>`
   font-weight: ${(prop) => (prop.as === 'h4' ? 600 : 700)};
   color: ${({ colorTitle, theme }) =>
     colorTitle === 'b'
-      ? theme.primaryText
+      ? theme.secondaryText
       : colorTitle === 'g'
         ? theme.button
-        : theme.secondaryText};
+        : theme.primaryText};
   transition: color 0.3s ease;
 `

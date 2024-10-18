@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 import { LinkItem } from '../Typography'
 import ButtonSwitch from '../Buttons/ButtonTheme'
 import * as S from './styles'
 import ButtonLanguage from '../Buttons/ButtonLanguage'
 
-import useWindowScrollY from '@/utils/getScrollY'
+import useWindowScrollY from '@/hooks/useWindowScrollY'
 
 type Prop = {
   onToggle: () => void
@@ -13,6 +14,8 @@ type Prop = {
 }
 
 const Header = ({ onToggle, isThemeLight }: Prop) => {
+  const t = useTranslations('Header')
+
   const scrollY = useWindowScrollY()
 
   return (
@@ -27,19 +30,22 @@ const Header = ({ onToggle, isThemeLight }: Prop) => {
         <S.NavContainer>
           <ul>
             <li>
-              <LinkItem href="/">Home</LinkItem>
+              <LinkItem href="/">{t('home')}</LinkItem>
             </li>
             <li>
-              <LinkItem href="/about">About</LinkItem>
+              <LinkItem href="/about">{t('about')}</LinkItem>
             </li>
             <li>
-              <LinkItem href="/projects">Projects</LinkItem>
+              <LinkItem href="/services">{t('services')}</LinkItem>
             </li>
             <li>
-              <LinkItem href="/products">Products</LinkItem>
+              <LinkItem href="/projects">{t('projects')}</LinkItem>
             </li>
             <li>
-              <LinkItem href="/contact">Contact</LinkItem>
+              <LinkItem href="/products">{t('products')}</LinkItem>
+            </li>
+            <li>
+              <LinkItem href="/contact">{t('contact')}</LinkItem>
             </li>
           </ul>
         </S.NavContainer>

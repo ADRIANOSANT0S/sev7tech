@@ -20,32 +20,32 @@ export const FooterContainer = styled.footer`
 
     > div {
       max-width: 272px;
+    }
 
-      img,
-      h3 {
-        margin-bottom: 32px;
-      }
+    img,
+    h3 {
+      margin-bottom: 32px;
     }
 
     // Style container IT
     ul {
       display: flex;
-      gap: 16px;
+      gap: 8px;
       flex-direction: column;
 
-      li:hover > svg:hover,
-      a:hover {
-        color: ${lighten(0.07, colors.goldAccent)};
-        transition: color 0.3s ease-in-out;
+      // Align item
+      li {
+        display: flex;
+        align-items: center;
       }
 
-      svg {
-        margin-right: 8px;
+      li a:hover {
+        color: ${lighten(0.07, colors.goldAccent)} !important;
+        transition: color 0.3s ease-in-out;
       }
     }
 
-    // Style div contact
-    > div:last-child {
+    address {
       > div {
         margin-bottom: 8px;
       }
@@ -56,7 +56,7 @@ export const FooterContainer = styled.footer`
 
       ul {
         display: flex;
-        row-gap: 16px;
+        row-gap: 8px;
       }
 
       span {

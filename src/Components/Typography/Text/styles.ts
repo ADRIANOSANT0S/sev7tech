@@ -2,14 +2,13 @@
 
 import styled from 'styled-components'
 
-import { pxToEm } from '@/utils/stringUtils'
-interface TextProps {
-  size: 'small' | 'normal'
-  weightText?: 'b'
-}
+import { Props } from '.'
 
-export const TextContainer = styled.p<TextProps>`
+import { pxToEm } from '@/utils/stringUtils'
+
+export const TextContainer = styled.p<Omit<Props, 'children' | 'as'>>`
   font-size: ${(prop) => (prop.size === 'normal' ? pxToEm(16) : pxToEm(14))};
   line-height: ${(prop) => (prop.size === 'normal' ? '28px' : '22px')};
   font-weight: ${(prop) => (prop.weightText === 'b' ? 600 : 400)};
+  color: ${({ theme }) => theme.primaryText};
 `

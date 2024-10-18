@@ -1,6 +1,34 @@
 {
-  "HomePage": {
-    "title": "Olá Mundo!",
-    "about": "Ir para página home"
+  "Header": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços",
+    "projects": "Projetos",
+    "products": "Produtos",
+    "contact": "Contato"
+  },
+  "ButtonLinkTexts": {
+    "seeAll": {
+      "title": "Clique aqui para ver todos os serviços",
+      "content": "Ver Todos Serviços"
+    }
+  },
+  "Footer": {
+    "itSolution": "Solução de TI",
+    "seoOptimization": "Otimização de SEO",
+    "webDevelopment": "Desenvolvimento Web",
+    "webDesign": "Design Web",
+    "quickLink": "Link Rápido",
+    "aboutSev7Tech": "Sobre a Sev7Tech",
+    "ourServices": "Nossos Serviços",
+    "ourProjects": "Nossos Projetos",
+    "ourProducts": "Nossos Produtos",
+    "contactUs": "Fale Conosco:",
+    "openingHours": "Horário de Funcionamento:",
+    "openingDay": "Seg-Sáb: 12:00 PM - 7:00 PM",
+    "contacts": "Contatos:",
+    "copyright": "© Todos os direitos reservados {currentYear} por Sev7Tech",
+    "terms": "Termos e Condições",
+    "privacy": "Política de Privacidade"
   }
 }

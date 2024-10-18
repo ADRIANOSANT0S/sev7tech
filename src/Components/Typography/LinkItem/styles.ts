@@ -13,7 +13,7 @@ export const LinkContainer = styled(Link)`
   font-weight: 600;
   line-height: 28px;
   padding: 8px;
-  color: ${({ theme }) => theme.secondaryText};
+  color: ${({ theme }) => theme.primaryText};
   transition: color 0.3s ease;
 
   &:hover {
