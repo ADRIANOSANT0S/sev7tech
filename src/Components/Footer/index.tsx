@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import { LuChevronsRight } from 'react-icons/lu'
-import { FaWhatsapp } from 'react-icons/fa'
-import { MdOutlineAccessTime, MdOutlineMail } from 'react-icons/md'
+import { MdEmail } from 'react-icons/md'
 import { useTranslations } from 'next-intl'
+import { RiWhatsappFill } from 'react-icons/ri'
+import { BiSolidTimeFive } from 'react-icons/bi'
 
 import { LinkItem, Text, Title } from '../Typography'
 import * as S from './styles'
@@ -68,30 +69,35 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-        <address>
-          <div>
-            <Title as="h3">{t('contactUs')}</Title>
+        <div>
+          <Title as="h3">{t('contactUs')}</Title>
+          <address>
             <div>
-              <Title as="h4">{t('openingHours')}</Title>
-              <MdOutlineAccessTime /> <Text as="span">{t('openingDay')}</Text>
+              <div>
+                <ul>
+                  <li>
+                    <Title as="h4">{t('openingHours')}</Title>
+                  </li>
+                  <li>
+                    <BiSolidTimeFive />
+                    <Text as="span">{t('openingDay')}</Text>
+                  </li>
+                  <li>
+                    <Title as="h4">{t('contacts')}</Title>
+                  </li>
+                  <li>
+                    <RiWhatsappFill />
+                    <Text as="span">(11) 9 4076-3490</Text>
+                  </li>
+                  <li>
+                    <MdEmail />
+                    <Text as="span">company@hotmail.com.br</Text>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div>
-            <div>
-              <Title as="h4">{t('contactUs')}</Title>
-              <ul>
-                <li>
-                  <FaWhatsapp />
-                  <Text as="span">(11) 9 4076-3490</Text>
-                </li>
-                <li>
-                  <MdOutlineMail />
-                  <Text as="span">company@hotmail.com.br</Text>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </address>
+          </address>
+        </div>
       </div>
       <div className="container container-flex">
         <Text as="p">{t('copyright', { currentYear })}</Text>

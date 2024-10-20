@@ -26,6 +26,16 @@
     "terms": "Estoy de acuerdo con la",
     "privacyPolicy": "política de privacidad."
   },
+  "Contact": {
+    "contact": "Contacto",
+    "contactUs": "Contáctenos",
+    "contactInformation": "Información de Contacto",
+    "description": "ES, ipsum dolor sit amet consectetur adipisicing elit. Vitae quas impedit animi eaque iure totam, provident minima tempore,provident minima tempore, provident minima tempore, provident minima tempore, provident minima tempore, provident minima tempore.",
+    "openingDay": "Lun a Vie: 12:00 PM - 7:00 PM (emergencia 24h)",
+    "linkTitle1": "Estamos disponibles de lunes a viernes, de 12:00 PM a 7:00 PM (horario de Brasilia). Para emergencias, tenemos atención 24 horas.",
+    "linkTitle2": "Número de WhatsApp",
+    "linkTitle3": "Correo electrónico de contacto"
+  },
   "Footer": {
     "itSolution": "Solución de TI",
     "seoOptimization": "Optimización SEO",
