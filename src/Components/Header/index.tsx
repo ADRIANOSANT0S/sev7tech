@@ -36,7 +36,7 @@ const Header = ({ onToggle, isThemeLight }: Prop) => {
               <LinkItem href="/about">{t('about')}</LinkItem>
             </li>
             <li>
-              <LinkItem href="/services">{t('services')}</LinkItem>
+              <LinkItem href="/servicesOffer/1">{t('services')}</LinkItem>
             </li>
             <li>
               <LinkItem href="/projects">{t('projects')}</LinkItem>
