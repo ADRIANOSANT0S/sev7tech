@@ -6,7 +6,6 @@ import NavigationServices from '@/Components/NavigationServices'
 import ServiceItem from '@/Components/ServicesItem'
 import { Text } from '@/Components/Typography'
 
-// Modifique para usar 'params'
 const ServicesOffer = ({ params }: { params: { id: string } }) => {
   const serviceId = Number(params.id)
   const service = servicesData.find((s) => s.id === serviceId)
