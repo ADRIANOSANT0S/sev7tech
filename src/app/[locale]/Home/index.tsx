@@ -17,7 +17,7 @@ import { MdGroups } from 'react-icons/md'
 import * as S from './styles'
 
 import Banner from '@/Components/Banner'
-import { Title, Text } from '@/Components/Typography'
+import { Title, CustomText } from '@/Components/Typography'
 import ButtonCTA from '@/Components/Buttons/ButtonCTA'
 import CardInfos from '@/Components/Cards/CardInfos'
 import Carousel from '@/Components/Carousel'
@@ -34,7 +34,7 @@ const Home = () => {
               Make The Easiest Solution For You Make The Easiest Solution For
               You Solution For You
             </Title>
-            <Text as="p" size="normal">
+            <CustomText as="p" size="normal">
               Consectetur adipiscing elit Aenean scelerisque at augue vitae
               consequat quisque eget congue velit in cursus leo Sed sodales
               Consectetur adipiscing elit Aenean scelerisque at augue vitae
@@ -43,7 +43,7 @@ const Home = () => {
               consequat quisque eget congue velit in cursus leo Sed sodales
               Consectetur adipiscing elit Aenean scelerisque at augue vitae
               consequat quisque eget congue velit in cursus leo Sed sodales
-            </Text>
+            </CustomText>
             <ButtonCTA href="/" title="Clique aqui para entrar em contato">
               Solicitar orçamento
             </ButtonCTA>
@@ -164,12 +164,12 @@ const Home = () => {
                 Transforming Your Business with Tailored Digital Solutions and
                 Expert Services
               </Title>
-              <Text as="p">
+              <CustomText as="p">
                 It is a long established fact that a reader will be distracted
                 the readable content of a page when looking at layout the point
                 of using lorem the is Ipsum less normal. It is a long
                 established fact that a reader will be distracted the .
-              </Text>
+              </CustomText>
             </div>
             <ul className="container-flex">
               <li className="container-flex">
@@ -217,12 +217,12 @@ const Home = () => {
           <Contact />
           <div>
             <Title as="h2">TigjhvhjvbbcvbcvbcS</Title>
-            <Text as="p">
+            <CustomText as="p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sed
               commodi? Cupiditate ab, labore necessitatibus fugiat soluta libero
               facilis saepe nobis veniam ipsum, nemo molestias beatae quidem
               reprehenderit inventore pariatur.
-            </Text>
+            </CustomText>
             <S.ImageContact>
               <Image
                 src="/image/contact.jpg"

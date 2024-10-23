@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import * as S from './styles'
 
-import { Title, Text, LinkItem } from '@/Components/Typography'
+import { Title, CustomText, LinkItem } from '@/Components/Typography'
 
 type Props = {
   children: React.ReactNode
@@ -23,7 +23,7 @@ const CardInfos = ({ children, title, description, goTo, urlImg }: Props) => {
       </div>
       <S.InfoContainer>
         <Title as="h3">{title}</Title>
-        <Text as="p">{description}</Text>
+        <CustomText as="p">{description}</CustomText>
         <LinkItem href={goTo}>Read More</LinkItem>
       </S.InfoContainer>
     </S.CardInfos>

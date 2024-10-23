@@ -2,7 +2,7 @@ import { MdColorLens } from 'react-icons/md'
 
 import * as S from './styles'
 
-import { Title, Text, LinkItem } from '@/Components/Typography'
+import { Title, CustomText, LinkItem } from '@/Components/Typography'
 
 export type Props = {
   url: string
@@ -18,7 +18,7 @@ const CardImage = ({ url, title, details, goTo, children }: Props) => {
       <div>
         <MdColorLens size={40} />
         <Title as="h4">{title}</Title>
-        <Text as="span">{details}</Text>
+        <CustomText as="span">{details}</CustomText>
         <LinkItem href={goTo}>Read more</LinkItem>
       </div>
       <S.Description>

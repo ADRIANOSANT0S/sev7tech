@@ -2,7 +2,7 @@
 
 import styled from 'styled-components'
 
-import { TextContainer } from '@/Components/Typography/Text/styles'
+import { TextContainer } from '@/Components/Typography/CustomText/styles'
 import { TitleContainer } from '@/Components/Typography/Title/styles'
 
 export const AboutSection = styled.section`

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { darken } from 'polished'
 
 import { colors } from '@/Components/GlobalStyle/theme'
-import { TextContainer } from '@/Components/Typography/Text/styles'
+import { TextContainer } from '@/Components/Typography/CustomText/styles'
 import { Link } from '@/i18n/routing'
 
 export const ChildrenBanner = styled.div`

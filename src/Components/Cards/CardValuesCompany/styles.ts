@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { colors } from '@/Components/GlobalStyle/theme'
 import { TitleContainer } from '@/Components/Typography/Title/styles'
-import { TextContainer } from '@/Components/Typography/Text/styles'
+import { TextContainer } from '@/Components/Typography/CustomText/styles'
 
 export const CardValuerCompany = styled.div`
   display: flex;
