@@ -6,7 +6,7 @@ import * as S from './styles'
 
 import Banner from '@/Components/Banner'
 import ValuesCompany from '@/Components/Cards/CardValuesCompany'
-import { Title, Text } from '@/Components/Typography'
+import { Title, CustomText } from '@/Components/Typography'
 import Carousel from '@/Components/Carousel'
 
 const About = () => {
@@ -19,7 +19,7 @@ const About = () => {
           <Title as="h2">
             Ensuring Your Success Through Reliable IT Solutions
           </Title>
-          <Text as="p">
+          <CustomText as="p">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
             tempore corporis tenetur vel! Exercitationem velit maiores eaque
             eveniet voluptates reprehenderit doloremque! Asperiores, atque
@@ -43,8 +43,8 @@ const About = () => {
             tenetur vel! Exercitationem velit maiores eaque eveniet voluptates
             reprehenderit doloremque! Asperiores, atque repudiandae. Fugiat
             aperiam corporis iusto amet eum.
-          </Text>
-          <Text as="p">
+          </CustomText>
+          <CustomText as="p">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
             tempore corporis tenetur vel! Exercitationem velit maiores eaque
             eveniet voluptates reprehenderit doloremque! Asperiores, atque
@@ -68,7 +68,7 @@ const About = () => {
             tenetur vel! Exercitationem velit maiores eaque eveniet voluptates
             reprehenderit doloremque! Asperiores, atque repudiandae. Fugiat
             aperiam corporis iusto amet eum.
-          </Text>
+          </CustomText>
         </div>
       </S.AboutSection>
       <S.ValueSection>
@@ -122,12 +122,12 @@ const About = () => {
         <div className="container">
           <div>
             <Title as="h2">Nosso diferencial</Title>
-            <Text as="p">
+            <CustomText as="p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Architecto quae perferendis asperiores quia corrupti voluptatem
               autem ipsa. Iure perferendis dolore eos culpa repellat optio
               magnam, a voluptatem explicabo ut perspiciatis.
-            </Text>
+            </CustomText>
           </div>
         </div>
       </section>

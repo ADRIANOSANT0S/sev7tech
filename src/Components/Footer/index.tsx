@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { MdOutlineAccessTime, MdOutlineMail } from 'react-icons/md'
 import { useTranslations } from 'next-intl'
 
-import { LinkItem, Text, Title } from '../Typography'
+import { LinkItem, CustomText, Title } from '../Typography'
 import * as S from './styles'
 
 export const Footer = () => {
@@ -23,12 +23,12 @@ export const Footer = () => {
             width={200}
             height={48}
           />
-          <Text as="p">
+          <CustomText as="p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, vel
             harum porro nesciunt ipsa sapiente aliquam fugit odit,
             reprehenderit, minima pariatur ullam rerum sit dicta numquam veniam
             doloribus accusamus assumenda!
-          </Text>
+          </CustomText>
         </div>
         <div>
           <Title as="h3">{t('itSolution')}</Title>
@@ -73,7 +73,8 @@ export const Footer = () => {
             <Title as="h3">{t('contactUs')}</Title>
             <div>
               <Title as="h4">{t('openingHours')}</Title>
-              <MdOutlineAccessTime /> <Text as="span">{t('openingDay')}</Text>
+              <MdOutlineAccessTime />{' '}
+              <CustomText as="span">{t('openingDay')}</CustomText>
             </div>
           </div>
           <div>
@@ -82,11 +83,11 @@ export const Footer = () => {
               <ul>
                 <li>
                   <FaWhatsapp />
-                  <Text as="span">(11) 9 4076-3490</Text>
+                  <CustomText as="span">(11) 9 4076-3490</CustomText>
                 </li>
                 <li>
                   <MdOutlineMail />
-                  <Text as="span">company@hotmail.com.br</Text>
+                  <CustomText as="span">company@hotmail.com.br</CustomText>
                 </li>
               </ul>
             </div>
@@ -94,7 +95,7 @@ export const Footer = () => {
         </address>
       </div>
       <div className="container container-flex">
-        <Text as="p">{t('copyright', { currentYear })}</Text>
+        <CustomText as="p">{t('copyright', { currentYear })}</CustomText>
         <ul className="container-flex">
           <li>
             <LinkItem href="/">{t('terms')}</LinkItem>

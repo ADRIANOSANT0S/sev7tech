@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-import { Title, Text } from '@/Components/Typography'
+import { Title, CustomText } from '@/Components/Typography'
 
 type Props = {
   children: React.ReactNode
@@ -14,7 +14,7 @@ const ValuesCompany = ({ children, title, description }: Props) => {
       {children}
       <div>
         <Title as="h3">{title}</Title>
-        <Text as="p">{description}</Text>
+        <CustomText as="p">{description}</CustomText>
       </div>
     </S.CardValuerCompany>
   )

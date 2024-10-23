@@ -7,7 +7,12 @@ export type Props = {
   weightText?: 'b'
 }
 
-const Text = ({ children, as = 'p', size = 'normal', weightText }: Props) => {
+const CustomText = ({
+  children,
+  as = 'p',
+  size = 'normal',
+  weightText
+}: Props) => {
   return (
     <TextContainer as={as} size={size} weightText={weightText}>
       {children}
@@ -15,4 +20,4 @@ const Text = ({ children, as = 'p', size = 'normal', weightText }: Props) => {
   )
 }
 
-export default Text
+export default CustomText

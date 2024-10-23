@@ -6,7 +6,7 @@ import { usePathname, useRouter } from 'next/navigation'
 
 import * as S from './styles'
 
-import { Text } from '@/Components/Typography'
+import { CustomText } from '@/Components/Typography'
 
 const ButtonLanguages = () => {
   const router = useRouter()
@@ -73,14 +73,14 @@ const ButtonLanguages = () => {
       <S.DropdownContainer>
         <S.DropdownToggle onClick={() => setMenuOpen(!menuOpen)}>
           {langLabel}
-          <Text as="span">
+          <CustomText as="span">
             {options
               .find(
                 (option) =>
                   option.value.toLowerCase() === pathname.split('/')[1]
               )
               ?.value.toUpperCase()}
-          </Text>
+          </CustomText>
           <FaCaretDown />
         </S.DropdownToggle>
         {menuOpen && (

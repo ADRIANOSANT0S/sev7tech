@@ -1,40 +1,47 @@
-import { FaLaptopCode } from 'react-icons/fa'
+import Image from 'next/image'
 
 import * as S from './styles'
 
-import { LinkItem, Text, Title } from '@/Components/Typography'
-type Props = {
-  imagUrl: string
+import { LinkItem, CustomText, Title } from '@/Components/Typography'
+
+export interface ProjectItemProps {
+  id?: string
+  title: string
+  text: string
+  result: string
+  stacks: React.ReactElement[]
+  url: string
 }
 
-const ProjectItem = () => {
+const ProjectItem = ({
+  title,
+  text,
+  result,
+  stacks,
+  url
+}: ProjectItemProps) => {
   return (
-    <>
-      <S.ProjectItemContainer
-        className="container-flex"
-        style={{
-          backgroundImage: `url('/image/banner.jpg')`
-        }}
-      >
-        <div>
-          <Title as="h3">Website</Title>
-          <Text as="p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
-            dolorem eaque pariatur ex, culpa voluptates nihil voluptatem quidem.
-            Neque eligendi voluptate placeat dolore quia fuga consequatur
-            voluptatem veniam cupiditate at.
-          </Text>
-        </div>
-        <div>
-          <Title as="h3">Portfolio</Title>
-          <Text as="span">
-            <FaLaptopCode size={18} />
-            Website
-          </Text>
-          <LinkItem href="/">Read More</LinkItem>
-        </div>
-      </S.ProjectItemContainer>
-    </>
+    <S.ProjectItemContainer>
+      <S.ImageContainer>
+        <Image src="/image/site.png" alt="test" width={600} height={328} />
+      </S.ImageContainer>
+      <S.ProjectDetails>
+        <Title as="h4">{title}</Title>
+        <CustomText as="p">{text}</CustomText>
+        <Title as="h4">Project Highlights</Title>
+        <CustomText as="p" size="small">
+          {result}
+        </CustomText>
+        <S.TechnologyList>
+          {stacks.map((item, index) => (
+            <li key={index}>
+              <CustomText as="span">{item}</CustomText>
+            </li>
+          ))}
+        </S.TechnologyList>
+        <LinkItem href={url}>Read More</LinkItem>
+      </S.ProjectDetails>
+    </S.ProjectItemContainer>
   )
 }
 

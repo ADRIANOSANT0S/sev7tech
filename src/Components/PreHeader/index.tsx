@@ -1,6 +1,6 @@
 import { FaInstagram, FaFacebook, FaGithub, FaWhatsapp } from 'react-icons/fa'
 
-import { LinkItem, Text } from '../Typography'
+import { LinkItem, CustomText } from '../Typography'
 import { PreHeaderContainer } from './styles'
 
 import useWindowScrollY from '@/hooks/useWindowScrollY'
@@ -13,7 +13,7 @@ const PreHeader = () => {
       <div className="container container-flex">
         <LinkItem href="to:+5511949793490" className="container-flex">
           <FaWhatsapp />
-          <Text as="span">(11) 9 4076-3490</Text>
+          <CustomText as="span">(11) 9 4076-3490</CustomText>
         </LinkItem>
         <ul className="container-flex">
           <li>
