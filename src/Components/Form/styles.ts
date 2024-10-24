@@ -11,7 +11,6 @@ import { pxToEm } from '@/utils/stringUtils'
 export const FormContainer = styled.form`
   padding: 40px;
   background-color: ${colors.skyColor};
-  max-width: 680px;
   width: 100%;
   border-radius: 20px;
 `

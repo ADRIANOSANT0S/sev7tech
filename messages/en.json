@@ -11,7 +11,30 @@
     "seeAll": {
       "title": "Click here to view all the services we offer",
       "content": "See All Services"
+    },
+    "buttonSubmit": {
+      "title": "Click to submit your Inquiry",
+      "content": "Send Inquiry"
     }
+  },
+  "Form": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone (WhatsApp)",
+    "email": "E-mail",
+    "message": "Message",
+    "terms": "I agree to the",
+    "privacyPolicy": "privacy policy."
+  },
+  "Contact": {
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "contactInformation": "Contact Information",
+    "description": "EN, ipsum dolor sit amet consectetur adipisicing elit. Vitae quas impedit animi eaque iure totam, provident minima tempore,provident minima tempore, provident minima tempore, provident minima tempore, provident minima tempore, provident minima tempore.",
+    "openingDay": "Mon-Fri: 12:00 PM - 7:00 PM (emergency 24h)",
+    "linkTitle1": "We are available from Monday to Friday, from 12:00 PM to 7:00 PM (Brasília time). For emergencies, we offer 24-hour service.",
+    "linkTitle2": "WhatsApp number",
+    "linkTitle3": "Contact e-mail"
   },
   "Footer": {
     "itSolution": "IT Solution",
@@ -25,7 +48,7 @@
     "ourProducts": "Our Products",
     "contactUs": "Contact Us:",
     "openingHours": "Opening Hours:",
-    "openingDay": "Mon-Sat: 12.00 PM - 7.00 PM",
+    "openingDay": "Mon-Sat: 12:00 PM - 7:00 PM",
     "contacts": "Contacts:",
     "copyright": "© All copyright {currentYear} by Sev7Tech",
     "terms": "Terms & Condition",

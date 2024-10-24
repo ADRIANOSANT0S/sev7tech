@@ -46,7 +46,7 @@ export const SectionAbout = styled.section`
   background-color: ${darken(0.05, colors.navy)};
 
   .container {
-    gap: 40px;
+    gap: 56px;
     align-items: flex-start;
     width: 100%;
 

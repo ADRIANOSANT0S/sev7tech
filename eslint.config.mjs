@@ -64,7 +64,7 @@ export default [
         { argsIgnorePattern: '^_' }
       ],
       '@typescript-eslint/no-explicit-any': 'error',
-      'prettier/prettier': ['error', { semi: false }]
+      'prettier/prettier': ['error', { semi: false, endOfLine: 'auto' }]
     }
   }
 ]

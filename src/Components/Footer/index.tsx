@@ -1,8 +1,9 @@
 import Image from 'next/image'
 import { LuChevronsRight } from 'react-icons/lu'
-import { FaWhatsapp } from 'react-icons/fa'
-import { MdOutlineAccessTime, MdOutlineMail } from 'react-icons/md'
+import { MdEmail } from 'react-icons/md'
 import { useTranslations } from 'next-intl'
+import { RiWhatsappFill } from 'react-icons/ri'
+import { BiSolidTimeFive } from 'react-icons/bi'
 
 import { LinkItem, CustomText, Title } from '../Typography'
 import * as S from './styles'

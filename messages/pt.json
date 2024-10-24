@@ -11,8 +11,32 @@
     "seeAll": {
       "title": "Clique aqui para ver todos os serviços",
       "content": "Ver Todos Serviços"
+    },
+    "buttonSubmit": {
+      "title": "Clique para enviar sua solicitação",
+      "content": "Enviar Solicitação"
     }
   },
+  "Form": {
+    "firstName": "Primeiro Nome",
+    "lastName": "Sobrenome",
+    "phone": "Telefone (WhatsApp)",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "terms": "Eu concordo com a",
+    "privacyPolicy": "política de privacidade."
+  },
+  "Contact": {
+    "contact": "Contato",
+    "contactUs": "Entre em Contato",
+    "contactInformation": "Informações de Contato",
+    "description": "PT, ipsum dolor sit amet consectetur adipisicing elit. Vitae quas impedit animi eaque iure totam, provident minima tempore,provident minima tempore, provident minima tempore, provident minima tempore, provident minima tempore, provident minima tempore.",
+    "openingDay": "Seg a Sex: 12:00 PM - 7:00 PM (emergência 24h)",
+    "linkTitle1": "Estamos disponíveis de segunda a sexta, das 12:00 PM às 7:00 PM (horário de Brasília). Para emergências, temos atendimento 24 horas.",
+    "linkTitle2": "Número do WhatsApp",
+    "linkTitle3": "E-mail de contato"
+  },
+
   "Footer": {
     "itSolution": "Solução de TI",
     "seoOptimization": "Otimização de SEO",

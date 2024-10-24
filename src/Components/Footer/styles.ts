@@ -24,19 +24,20 @@ export const FooterContainer = styled.footer`
 
     img,
     h3 {
-      margin-bottom: 32px;
+      margin-bottom: 24px;
     }
 
     // Style container IT
     ul {
       display: flex;
-      gap: 8px;
+      gap: 4px;
       flex-direction: column;
 
       // Align item
       li {
         display: flex;
         align-items: center;
+        font-weight: 600;
       }
 
       li a:hover {
@@ -57,10 +58,16 @@ export const FooterContainer = styled.footer`
       ul {
         display: flex;
         row-gap: 8px;
+
+        svg {
+          margin-right: 8px;
+          height: 18px;
+          width: 18px;
+        }
       }
 
       span {
-        font-weight: 400;
+        font-weight: 500;
       }
     }
   }
