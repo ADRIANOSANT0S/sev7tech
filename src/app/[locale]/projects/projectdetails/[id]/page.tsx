@@ -41,7 +41,7 @@ const ProjectDetails = ({ params }: { params: { id: string } }) => {
       category: 'Web Develop',
       duration: '12 month (Jan 2025 - Dec 2025)',
       state: 'Progress 1%',
-      url: ''
+      url: 'https://clone-disney-pi-six.vercel.app/'
     }
   ]
 
