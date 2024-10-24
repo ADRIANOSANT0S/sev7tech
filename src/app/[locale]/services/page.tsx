@@ -27,7 +27,7 @@ const ServicesOffer = () => {
               <ServiceInfos
                 title="Development of Custom Websites"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
-                goTo="/services/servicedetails/1"
+                goTo="/services/service-details/1"
                 urlImg="/image/services_image/web-develope.jpg"
               >
                 <FaLaptopCode width={40} height={40} />
@@ -37,7 +37,7 @@ const ServicesOffer = () => {
               <ServiceInfos
                 title="Exclusive and Customized UI/UX Design for Your Business"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
-                goTo="/services/servicedetails/2"
+                goTo="/services/service-details/2"
                 urlImg="/image/services_image/design.png"
               >
                 <IoMdColorPalette width={40} height={40} />
@@ -47,7 +47,7 @@ const ServicesOffer = () => {
               <ServiceInfos
                 title="Custom Application Solutions"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
-                goTo="/services/servicedetails/3"
+                goTo="/services/service-details/3"
                 urlImg="/image/services_image/app-development.png"
               >
                 <HiMiniDevicePhoneMobile width={40} height={40} />

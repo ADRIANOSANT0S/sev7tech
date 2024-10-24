@@ -11,4 +11,5 @@ export const TextContainer = styled.p<Omit<Props, 'children' | 'as'>>`
   line-height: ${(prop) => (prop.size === 'normal' ? '28px' : '22px')};
   font-weight: ${(prop) => (prop.weightText === 'b' ? 600 : 400)};
   color: ${({ theme }) => theme.primaryText};
+  letter-spacing: 0.5px;
 `

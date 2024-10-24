@@ -22,7 +22,7 @@ const Projects = () => {
         <TbBrandPython size={18} aria-label="Icon Python" />,
         <BiLogoPostgresql size={18} aria-label="Icon Postgres" />
       ],
-      url: 'projects/details/1'
+      url: 'projects/project-details/1'
     }
   ]
   return (

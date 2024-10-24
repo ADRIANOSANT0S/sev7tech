@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const BannerContainer = styled.section`
   position: relative;
-  min-height: 588px;
+  height: auto;
   width: 100vw;
   background-repeat: no-repeat;
   background-position: center center;

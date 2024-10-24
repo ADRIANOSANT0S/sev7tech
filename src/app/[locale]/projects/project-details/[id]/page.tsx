@@ -1,10 +1,11 @@
-import * as S from './styles'
+import * as S from '../styles'
 
 import ProjectDetailsItem, {
   ProjectDetailsProps
 } from '@/Components/Cards/ProjectDetails'
 import Banner from '@/Components/Banner'
 import CustomText from '@/Components/Typography/CustomText'
+import PageInfos, { NavigateItem } from '@/Components/PageInfos'
 
 const ProjectDetails = ({ params }: { params: { id: string } }) => {
   const projectDetailsData: ProjectDetailsProps[] = [
@@ -45,13 +46,28 @@ const ProjectDetails = ({ params }: { params: { id: string } }) => {
     }
   ]
 
+  const navigationLink: NavigateItem[] = [
+    {
+      children: 'Project',
+      iconLabel: 'Navigate to page Project',
+      url: `/projects/project-details/${params.id}`
+    },
+    {
+      children: 'Project-details',
+      iconLabel: 'Navigate to page Project-details',
+      url: `project-details/${params.id}`
+    }
+  ]
+
   const details = projectDetailsData.find((p) => p.id === params.id)
 
   return (
     <>
       {details ? (
         <>
-          <Banner urlImage="/image/banner.jpg" />
+          <Banner urlImage="/image/banner.jpg">
+            <PageInfos items={navigationLink} title="Project Details" />
+          </Banner>
           <S.ProjectDetailsContainer>
             <div className="container">
               <ProjectDetailsItem

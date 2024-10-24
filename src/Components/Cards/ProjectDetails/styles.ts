@@ -2,6 +2,8 @@
 
 import styled from 'styled-components'
 
+import { pxToEm } from './../../../utils/stringUtils'
+
 import { TextContainer } from '@/Components/Typography/CustomText/styles'
 import { colors } from '@/Components/GlobalStyle/theme'
 import { LinkContainer } from '@/Components/Typography/LinkItem/styles'
@@ -75,9 +77,10 @@ export const AsideContainer = styled.aside`
     margin-bottom: 16px;
 
     ${LinkContainer}, span {
-      font-size: 14px;
+      font-size: ${pxToEm(14)};
       font-weight: 500;
       color: ${colors.pureWhite};
+      white-space: nowrap;
     }
 
     ${LinkContainer} {

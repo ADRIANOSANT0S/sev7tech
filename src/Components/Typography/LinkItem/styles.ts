@@ -15,6 +15,7 @@ export const LinkContainer = styled(Link)`
   padding: 8px;
   color: ${({ theme }) => theme.primaryText};
   transition: color 0.3s ease;
+  letter-spacing: 0.5px;
 
   &:hover {
     color: ${lighten(0.07, colors.goldAccent)};
