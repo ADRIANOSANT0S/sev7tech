@@ -5,7 +5,7 @@ import { FaBullseye, FaEye, FaHandshake } from 'react-icons/fa6'
 import * as S from './styles'
 
 import Banner from '@/Components/Banner'
-import ValuesCompany from '@/Components/Cards/CardValuesCompany'
+import ValuesCompany from '@/Components/Cards/ValuesCompany'
 import { Title, CustomText } from '@/Components/Typography'
 import Carousel from '@/Components/Carousel'
 

@@ -3,10 +3,8 @@
 import {
   FaChartBar,
   FaChartLine,
-  FaCogs,
   FaDatabase,
-  FaShoppingCart,
-  FaTools
+  FaShoppingCart
 } from 'react-icons/fa'
 import { FaLaptopCode } from 'react-icons/fa6'
 import Image from 'next/image'

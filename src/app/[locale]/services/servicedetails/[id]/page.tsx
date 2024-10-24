@@ -6,7 +6,7 @@ import NavigationServices, {
   ServicesLink
 } from '@/Components/NavigationServices'
 import ServiceItem from '@/Components/ServicesItem'
-import { Text } from '@/Components/Typography'
+import { CustomText } from '@/Components/Typography'
 
 const ServicesOffer = ({ params }: { params: { id: string } }) => {
   const service = servicesData.find((s) => s.id === params.id)
@@ -69,7 +69,7 @@ const ServicesOffer = ({ params }: { params: { id: string } }) => {
           </S.ServicesContainer>
         </>
       ) : (
-        <Text as="p">Services not found</Text>
+        <CustomText as="p">Services not found</CustomText>
       )}
     </>
   )

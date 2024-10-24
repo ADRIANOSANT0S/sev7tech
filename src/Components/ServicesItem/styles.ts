@@ -3,7 +3,7 @@
 import styled from 'styled-components'
 
 import { TitleContainer } from '../Typography/Title/styles'
-import { TextContainer } from '../Typography/Text/styles'
+import { TextContainer } from '../Typography/CustomText/styles'
 import { colors } from '../GlobalStyle/theme'
 
 export const ServiceItemContainer = styled.div`
