@@ -1,12 +1,13 @@
 'use client'
 
 import { FaBullseye, FaEye, FaHandshake } from 'react-icons/fa6'
+import Image from 'next/image'
 
 import * as S from './styles'
 
 import Banner from '@/Components/Banner'
 import ValuesCompany from '@/Components/Cards/CardValuesCompany'
-import { Title, Text } from '@/Components/Typography'
+import { Title, Text, LinkItem } from '@/Components/Typography'
 import Carousel from '@/Components/Carousel'
 
 const About = () => {
@@ -17,7 +18,7 @@ const About = () => {
         <div className="container">
           <Title as="h3">Who We Are</Title>
           <Title as="h2">
-            Ensuring Your Success Through Reliable IT Solutions
+            Empowering Businesses Through Human-Centered IT Solutions
           </Title>
           <Text as="p">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
@@ -30,19 +31,6 @@ const About = () => {
             aperiam corporis iusto amet eum. Lorem ipsum dolor sit, amet
             consectetur adipisicing elit. Sint tempore corporis tenetur vel!
             Exercitationem velit maiores eaque eveniet voluptates reprehenderit
-            doloremque! Asperiores, atque repudiandae. Fugiat aperiam corporis
-            iusto amet eum. Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Sint tempore corporis tenetur vel! Exercitationem velit
-            maiores eaque eveniet voluptates reprehenderit doloremque!
-            Asperiores, atque repudiandae. Fugiat aperiam corporis iusto amet
-            eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-            tempore corporis tenetur vel! Exercitationem velit maiores eaque
-            eveniet voluptates reprehenderit doloremque! Asperiores, atque
-            repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Sint tempore corporis
-            tenetur vel! Exercitationem velit maiores eaque eveniet voluptates
-            reprehenderit doloremque! Asperiores, atque repudiandae. Fugiat
-            aperiam corporis iusto amet eum.
           </Text>
           <Text as="p">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
@@ -55,20 +43,42 @@ const About = () => {
             aperiam corporis iusto amet eum. Lorem ipsum dolor sit, amet
             consectetur adipisicing elit. Sint tempore corporis tenetur vel!
             Exercitationem velit maiores eaque eveniet voluptates reprehenderit
-            doloremque! Asperiores, atque repudiandae. Fugiat aperiam corporis
-            iusto amet eum. Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Sint tempore corporis tenetur vel! Exercitationem velit
-            maiores eaque eveniet voluptates reprehenderit doloremque!
-            Asperiores, atque repudiandae. Fugiat aperiam corporis iusto amet
-            eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-            tempore corporis tenetur vel! Exercitationem velit maiores eaque
-            eveniet voluptates reprehenderit doloremque! Asperiores, atque
-            repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Sint tempore corporis
-            tenetur vel! Exercitationem velit maiores eaque eveniet voluptates
-            reprehenderit doloremque! Asperiores, atque repudiandae. Fugiat
-            aperiam corporis iusto amet eum.
           </Text>
+          <S.ContainerFlex>
+            <S.ImageContainer>
+              <Image
+                src="/image/banner_about.jpg"
+                alt="test"
+                width={600}
+                height={400}
+                priority
+              />
+            </S.ImageContainer>
+            <div>
+              <Text as="p">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                tempore corporis tenetur vel! Exercitationem velit maiores eaque
+                eveniet voluptates reprehenderit doloremque! Asperiores, atque
+                repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Sint tempore
+                corporis tenetur vel! Exercitationem velit maiores eaque eveniet
+                voluptates reprehenderit doloremque! Asperiores, atque
+                repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem
+                ipsum!
+              </Text>
+              <Text as="p">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                tempore corporis tenetur vel! Exercitationem velit maiores eaque
+                eveniet voluptates reprehenderit doloremque! Asperiores, atque
+                repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Sint tempore
+                corporis tenetur vel! Exercitationem velit maiores eaque eveniet
+                voluptates reprehenderit doloremque! Asperiores, atque
+                repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
+                dolor sit.
+              </Text>
+            </div>
+          </S.ContainerFlex>
         </div>
       </S.AboutSection>
       <S.ValueSection>
@@ -77,7 +87,7 @@ const About = () => {
             Our values
           </Title>
           <Title as="h2">
-            adsfjasdflhka jsdfkjhasdfçlkans dfçlajksn df çlkasndfça
+            Core Values That Drive Results for Your Business
           </Title>
           <ul>
             <li>
@@ -113,24 +123,54 @@ const About = () => {
             <Title colorTitle="g" as="h3">
               Our Costumers
             </Title>
-            <Title as="h2">What our Costumers say about We</Title>
+            <Title as="h2">
+              "Trusted by Leading Businesses Worldwide"/
+              <br />
+              Trusted by Businesses That Value People
+            </Title>
             <Carousel />
           </div>
         </div>
       </S.SectionCostumers>
-      <section>
+      <S.WhyChooseUs>
         <div className="container">
           <div>
-            <Title as="h2">Nosso diferencial</Title>
-            <Text as="p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto quae perferendis asperiores quia corrupti voluptatem
-              autem ipsa. Iure perferendis dolore eos culpa repellat optio
-              magnam, a voluptatem explicabo ut perspiciatis.
-            </Text>
+            <Title as="h2">Why Businesses Rely on Us for IT Innovation</Title>
+            <S.ContainerFlex>
+              <S.ImageContainer>
+                <Image
+                  src="/image/banner_about.jpg"
+                  alt="test"
+                  width={600}
+                  height={400}
+                />
+              </S.ImageContainer>
+              <div>
+                <Text as="p">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                  tempore corporis tenetur vel! Exercitationem velit maiores
+                  eaque eveniet voluptates reprehenderit doloremque! Asperiores,
+                  atque repudiandae. Fugiat aperiam corporis iusto amet eum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                  eaque eveniet voluptates reprehenderit doloremque! Asperiores,
+                  atque repudiandae. Fugiat aperiam corporis iusto amet eum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                </Text>
+                <Text as="p">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                  tempore corporis tenetur vel! Exercitationem velit maiores
+                  eaque eveniet voluptates reprehenderit doloremque! Asperiores,
+                  atque repudiandae. Fugiat aperiam corporis iusto amet eum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                  atque repudiandae. Fugiat aperiam corporis iusto amet eum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                </Text>
+                <LinkItem href="/">Discover Our Services</LinkItem>
+              </div>
+            </S.ContainerFlex>
           </div>
         </div>
-      </section>
+      </S.WhyChooseUs>
     </>
   )
 }
