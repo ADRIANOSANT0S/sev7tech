@@ -12,7 +12,7 @@ export const NavigationContainer = styled.aside`
   position: sticky;
   top: 0px;
 
-  nav {
+  ul {
     display: flex;
     flex-direction: column;
     row-gap: 16px;

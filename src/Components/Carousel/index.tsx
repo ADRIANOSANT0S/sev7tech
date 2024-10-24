@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import { IoMdColorPalette } from 'react-icons/io'
 import dynamic from 'next/dynamic'
 
-import CardInfos from '../Cards/CardInfos'
+import CardInfos from '../Cards/ServiceInfos'
 
 const Carousel = () => {
   const Slider = dynamic(() => import('react-slick'), { ssr: false })

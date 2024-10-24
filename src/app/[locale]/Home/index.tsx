@@ -19,10 +19,11 @@ import * as S from './styles'
 import Banner from '@/Components/Banner'
 import { Title, Text } from '@/Components/Typography'
 import ButtonCTA from '@/Components/Buttons/ButtonCTA'
-import CardInfos from '@/Components/Cards/CardInfos'
+import ServiceInfos from '@/Components/Cards/ServiceInfos'
 import Carousel from '@/Components/Carousel'
 import Contact from '@/Components/Form'
 import ButtonSeeAll from '@/Components/Buttons/ButtonSeeAll'
+import ServiceList from '@/Components/Containers/ServicesList'
 
 const Home = () => {
   return (
@@ -61,88 +62,68 @@ const Home = () => {
             </div>
             <ButtonSeeAll href="/services" />
           </S.ServicesBlock>
-          <S.CardList>
+          <ServiceList>
             <li>
-              <CardInfos
+              <ServiceInfos
                 title="Development of Custom Websites"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
                 goTo="/"
                 urlImg="/image/services_image/web-develope.jpg"
               >
                 <FaLaptopCode width={40} height={40} />
-              </CardInfos>
+              </ServiceInfos>
             </li>
             <li>
-              <CardInfos
+              <ServiceInfos
                 title="Exclusive Design and Visual Identity"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
                 goTo="/"
                 urlImg="/image/services_image/design.png"
               >
                 <IoMdColorPalette width={40} height={40} />
-              </CardInfos>
+              </ServiceInfos>
             </li>
             <li>
-              <CardInfos
+              <ServiceInfos
                 title="Custom Application Solutions"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
                 goTo="/"
                 urlImg="/image/services_image/app-development.png"
               >
                 <HiMiniDevicePhoneMobile width={40} height={40} />
-              </CardInfos>
+              </ServiceInfos>
             </li>
             <li>
-              <CardInfos
+              <ServiceInfos
                 title="Advanced Database Management"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
                 goTo="/"
                 urlImg="/image/services_image/database.png"
               >
                 <FaDatabase width={40} height={40} />
-              </CardInfos>
+              </ServiceInfos>
             </li>
             <li>
-              <CardInfos
+              <ServiceInfos
                 title="Custom ERP Development for Companies"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
                 goTo="/"
                 urlImg="/image/services_image/erp.svg"
               >
                 <FaChartBar width={40} height={40} />
-              </CardInfos>
+              </ServiceInfos>
             </li>
             <li>
-              <CardInfos
+              <ServiceInfos
                 title="Tailored E-commerce"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
                 goTo="/"
                 urlImg="/image/services_image/e-commerce.png"
               >
                 <FaShoppingCart width={40} height={40} />
-              </CardInfos>
+              </ServiceInfos>
             </li>
-            <li>
-              <CardInfos
-                title="Proactive Maintenance and Specialized Technical Support"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
-                goTo="/"
-                urlImg="/image/services_image/maintenance.png"
-              >
-                <FaTools width={40} height={40} />
-              </CardInfos>
-            </li>
-            <li>
-              <CardInfos
-                title="Intelligent Automation for Business Processes"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque veritatis fuga neque accusamus, iure, sit soluta  ex delectus officiis perferendis ex delectus officiis perferendis."
-                goTo="/"
-                urlImg="/image/services_image/automation.jpg"
-              >
-                <FaCogs width={40} height={40} />
-              </CardInfos>
-            </li>
-          </S.CardList>
+          </ServiceList>
         </div>
       </S.SectionCards>
       <S.SectionAbout>

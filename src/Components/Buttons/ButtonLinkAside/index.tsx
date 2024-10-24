@@ -2,21 +2,21 @@ import { PiArrowRightBold } from 'react-icons/pi'
 
 import * as S from './styles'
 
-import { LinkItem } from '@/Components/Typography'
-
 type Props = {
+  id: number
+  activeId: number
   children: string
   href: string
 }
 
-const LinkAside = ({ children, href }: Props) => {
+const LinkAside = ({ id, activeId, children, href }: Props) => {
   return (
-    <S.ButtonAside className="container-flex">
-      <LinkItem href={href}>{children}</LinkItem>
+    <S.ButtonAside className={id === activeId ? 'bgColor' : ''} href={href}>
+      {children}
       <PiArrowRightBold
         size={24}
         alignmentBaseline="central"
-        aria-description="Icon direction"
+        aria-label="Icon direction"
       />
     </S.ButtonAside>
   )

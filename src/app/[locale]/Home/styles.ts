@@ -34,13 +34,6 @@ export const SectionCards = styled.section`
   row-gap: 40px;
 `
 
-export const CardList = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  column-gap: 40px;
-`
-
 export const ServicesBlock = styled.div`
   display: flex;
   align-items: center;

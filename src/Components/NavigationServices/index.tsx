@@ -1,19 +1,30 @@
 import LinkAside from '../Buttons/ButtonLinkAside'
-import { LinkItem } from '../Typography'
 import * as S from './styles'
 
-const NavigationServices = () => {
+export interface ServicesLink {
+  id: number
+  children: string
+  url: string
+}
+
+type Props = {
+  links: ServicesLink[]
+  activeId: number
+}
+
+const NavigationServices = ({ links, activeId }: Props) => {
   return (
     <S.NavigationContainer>
       <nav>
-        <LinkAside href="/">Link</LinkAside>
-        <LinkItem href="/">Link</LinkItem>
-        <LinkItem href="/">Link</LinkItem>
-        <LinkItem href="/">Link</LinkItem>
-        <LinkItem href="/">Link</LinkItem>
-        <LinkItem href="/">Link</LinkItem>
-        <LinkItem href="/">Link</LinkItem>
-        <LinkItem href="/">Link</LinkItem>
+        <ul>
+          {links.map((link) => (
+            <li key={link.id}>
+              <LinkAside href={link.url} id={link.id} activeId={activeId}>
+                {link.children}
+              </LinkAside>
+            </li>
+          ))}
+        </ul>
       </nav>
     </S.NavigationContainer>
   )

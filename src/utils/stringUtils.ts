@@ -21,7 +21,8 @@ export const pxToEm = (px: number, base = 16): string => `${px / base}em`
 
 export const textSplit = (text: string, characterLimit: number): string => {
   if (text.length > characterLimit) {
-    return text + ' ...'
+    const newText = text.slice(0, characterLimit - 3)
+    return newText + '...'
   }
 
   return text

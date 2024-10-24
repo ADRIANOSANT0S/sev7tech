@@ -5,7 +5,7 @@ import { LinkItem, Text, Title } from '../Typography'
 import * as S from './styles'
 
 export interface ServicesInfos {
-  id?: number
+  id?: string
   imagUrl: string
   imagDescription: string
   text1: string
@@ -32,13 +32,13 @@ const ServiceItem = ({
         <Image src={imagUrl} alt={imagDescription} width={832} height={480} />
       </div>
       <S.ServiceDetails>
-        <Title as="h2">Details</Title>
+        <Title as="h2">Service Details</Title>
         <Text as="p">{text1}</Text>
         <Text as="p">{text2}</Text>
         <Text as="p">{text3}</Text>
       </S.ServiceDetails>
       <S.ServiceBenefits>
-        <Title as="h2">Benefits</Title>
+        <Title as="h2">Advantages for Your Business</Title>
         <ul>
           {benefit.map((item, index) => (
             <li key={index}>
@@ -52,9 +52,9 @@ const ServiceItem = ({
         <Text as="p">{text4}</Text>
       </S.ServiceBenefits>
       <S.ServiceDifference>
-        <Title as="h2">TITLE afajdflkj</Title>
+        <Title as="h2">Why choose us?</Title>
         <Text as="p">{text5}</Text>
-        <LinkItem href="/Contact">CTA</LinkItem>
+        <LinkItem href="/Contact">Get in Touch</LinkItem>
       </S.ServiceDifference>
     </S.ServiceItemContainer>
   )

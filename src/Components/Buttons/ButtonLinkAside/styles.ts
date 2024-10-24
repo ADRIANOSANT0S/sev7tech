@@ -7,12 +7,12 @@ import { colors } from './../../GlobalStyle/theme'
 
 import { LinkContainer } from '@/Components/Typography/LinkItem/styles'
 
-export const ButtonAside = styled.div`
-  padding: 12px 24px;
+export const ButtonAside = styled(LinkContainer)`
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 16px 24px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   background: linear-gradient(
     90deg,
@@ -24,6 +24,7 @@ export const ButtonAside = styled.div`
   transition:
     background-size 0.4s ease-in-out,
     background-position 0.4s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
   svg {
     color: ${colors.pureWhite};
@@ -32,15 +33,14 @@ export const ButtonAside = styled.div`
       padding-left 0.3s ease;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-size: 100% 100%;
     background-position: left center;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
-
-    ${LinkContainer} {
-      color: ${colors.goldAccent};
-    }
+    color: ${colors.goldAccent};
+    transition: all 0.4s ease-in;
 
     svg {
       padding-left: 4px;
@@ -54,5 +54,14 @@ export const ButtonAside = styled.div`
     transition:
       background-size 0.4s ease-in-out,
       background-position 0.4s ease-in-out;
+  }
+
+  &.bgColor {
+    background: linear-gradient(
+      90deg,
+      ${lighten(0.2, colors.twilightBlue)} 0%,
+      ${colors.twilightBlue} 100%
+    );
+    color: ${colors.goldAccent};
   }
 `

@@ -12,7 +12,13 @@ type Props = {
   urlImg: string
 }
 
-const CardInfos = ({ children, title, description, goTo, urlImg }: Props) => {
+const ServiceInfos = ({
+  children,
+  title,
+  description,
+  goTo,
+  urlImg
+}: Props) => {
   return (
     <S.CardInfos>
       <div>
@@ -30,4 +36,4 @@ const CardInfos = ({ children, title, description, goTo, urlImg }: Props) => {
   )
 }
 
-export default CardInfos
+export default ServiceInfos

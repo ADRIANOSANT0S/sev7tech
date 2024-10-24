@@ -1,6 +1,6 @@
 export const servicesData = [
   {
-    id: 1,
+    id: '1',
     imagUrl: '/image/banner.jpg',
     imagDescription: 'text',
     text1:
@@ -25,7 +25,7 @@ export const servicesData = [
     ]
   },
   {
-    id: 2,
+    id: '2',
     imagUrl: '/image/banner.jpg',
     imagDescription: 'text',
     text1:
@@ -50,7 +50,7 @@ export const servicesData = [
     ]
   },
   {
-    id: 3,
+    id: '3',
     imagUrl: '/image/banner.jpg',
     imagDescription: 'text',
     text1:
@@ -75,7 +75,7 @@ export const servicesData = [
     ]
   },
   {
-    id: 4,
+    id: '4',
     imagUrl: '/image/banner.jpg',
     imagDescription: 'text',
     text1:
@@ -100,7 +100,7 @@ export const servicesData = [
     ]
   },
   {
-    id: 5,
+    id: '5',
     imagUrl: '/image/banner.jpg',
     imagDescription: 'text',
     text1:
@@ -125,7 +125,7 @@ export const servicesData = [
     ]
   },
   {
-    id: 6,
+    id: '6',
     imagUrl: '/image/banner.jpg',
     imagDescription: 'text',
     text1:
@@ -150,7 +150,7 @@ export const servicesData = [
     ]
   },
   {
-    id: 7,
+    id: '7',
     imagUrl: '/image/banner.jpg',
     imagDescription: 'text',
     text1:
@@ -175,7 +175,7 @@ export const servicesData = [
     ]
   },
   {
-    id: 8,
+    id: '8',
     imagUrl: '/image/banner.jpg',
     imagDescription: 'text',
     text1:
