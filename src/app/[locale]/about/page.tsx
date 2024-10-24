@@ -1,12 +1,13 @@
 'use client'
 
 import { FaBullseye, FaEye, FaHandshake } from 'react-icons/fa6'
+import Image from 'next/image'
 
 import * as S from './styles'
 
 import Banner from '@/Components/Banner'
 import ValuesCompany from '@/Components/Cards/ValuesCompany'
-import { Title, CustomText } from '@/Components/Typography'
+import { Title, CustomText, LinkItem } from '@/Components/Typography'
 import Carousel from '@/Components/Carousel'
 
 const About = () => {
@@ -17,7 +18,7 @@ const About = () => {
         <div className="container">
           <Title as="h3">Who We Are</Title>
           <Title as="h2">
-            Ensuring Your Success Through Reliable IT Solutions
+            Empowering Businesses Through Human-Centered IT Solutions
           </Title>
           <CustomText as="p">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
@@ -25,50 +26,46 @@ const About = () => {
             eveniet voluptates reprehenderit doloremque! Asperiores, atque
             repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
             dolor sit, amet consectetur adipisicing elit. Sint tempore corporis
-            tenetur vel! Exercitationem velit maiores eaque eveniet voluptates
-            reprehenderit doloremque! Asperiores, atque repudiandae. Fugiat
-            aperiam corporis iusto amet eum. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Sint tempore corporis tenetur vel!
-            Exercitationem velit maiores eaque eveniet voluptates reprehenderit
-            doloremque! Asperiores, atque repudiandae. Fugiat aperiam corporis
+            tenetur vel! Asperiores, atque repudiandae. Fugiat aperiam corporis
             iusto amet eum. Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Sint tempore corporis tenetur vel! Exercitationem velit
-            maiores eaque eveniet voluptates reprehenderit doloremque!
-            Asperiores, atque repudiandae. Fugiat aperiam corporis iusto amet
-            eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-            tempore corporis tenetur vel! Exercitationem velit maiores eaque
-            eveniet voluptates reprehenderit doloremque! Asperiores, atque
-            repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Sint tempore corporis
-            tenetur vel! Exercitationem velit maiores eaque eveniet voluptates
-            reprehenderit doloremque! Asperiores, atque repudiandae. Fugiat
-            aperiam corporis iusto amet eum.
+            elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </CustomText>
-          <CustomText as="p">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-            tempore corporis tenetur vel! Exercitationem velit maiores eaque
-            eveniet voluptates reprehenderit doloremque! Asperiores, atque
-            repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Sint tempore corporis
-            tenetur vel! Exercitationem velit maiores eaque eveniet voluptates
-            reprehenderit doloremque! Asperiores, atque repudiandae. Fugiat
-            aperiam corporis iusto amet eum. Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Sint tempore corporis tenetur vel!
-            Exercitationem velit maiores eaque eveniet voluptates reprehenderit
-            doloremque! Asperiores, atque repudiandae. Fugiat aperiam corporis
-            iusto amet eum. Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Sint tempore corporis tenetur vel! Exercitationem velit
-            maiores eaque eveniet voluptates reprehenderit doloremque!
-            Asperiores, atque repudiandae. Fugiat aperiam corporis iusto amet
-            eum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-            tempore corporis tenetur vel! Exercitationem velit maiores eaque
-            eveniet voluptates reprehenderit doloremque! Asperiores, atque
-            repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Sint tempore corporis
-            tenetur vel! Exercitationem velit maiores eaque eveniet voluptates
-            reprehenderit doloremque! Asperiores, atque repudiandae. Fugiat
-            aperiam corporis iusto amet eum.
-          </CustomText>
+          <S.ContainerFlex>
+            <S.ImageContainer>
+              <Image
+                src="/image/banner_about.jpg"
+                alt="test"
+                width={600}
+                height={400}
+                priority
+              />
+            </S.ImageContainer>
+            <div>
+              <CustomText as="p">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                tempore corporis tenetur vel! Exercitationem velit maiores eaque
+                eveniet voluptates reprehenderit doloremque! Asperiores, atque
+                repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Sint tempore
+                corporis tenetur vel! Exercitationem velit maiores eaque eveniet
+                voluptates reprehenderit doloremque! Asperiores, atque
+                repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem
+                ipsum!
+              </CustomText>
+              <CustomText as="p">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                tempore corporis tenetur vel! Exercitationem velit maiores eaque
+                eveniet voluptates reprehenderit doloremque! Asperiores, atque
+                repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Sint tempore
+                corporis tenetur vel! Exercitationem velit maiores eaque eveniet
+                voluptates reprehenderit doloremque! Asperiores, atque
+                repudiandae. Fugiat aperiam corporis iusto amet eum. Lorem ipsum
+                dolor sit.
+              </CustomText>
+            </div>
+          </S.ContainerFlex>
         </div>
       </S.AboutSection>
       <S.ValueSection>
@@ -77,7 +74,7 @@ const About = () => {
             Our values
           </Title>
           <Title as="h2">
-            adsfjasdflhka jsdfkjhasdfçlkans dfçlajksn df çlkasndfça
+            Core Values That Drive Results for Your Business
           </Title>
           <ul>
             <li>
@@ -113,24 +110,54 @@ const About = () => {
             <Title colorTitle="g" as="h3">
               Our Costumers
             </Title>
-            <Title as="h2">What our Costumers say about We</Title>
+            <Title as="h2">
+              "Trusted by Leading Businesses Worldwide"/
+              <br />
+              Trusted by Businesses That Value People
+            </Title>
             <Carousel />
           </div>
         </div>
       </S.SectionCostumers>
-      <section>
+      <S.WhyChooseUs>
         <div className="container">
           <div>
-            <Title as="h2">Nosso diferencial</Title>
-            <CustomText as="p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto quae perferendis asperiores quia corrupti voluptatem
-              autem ipsa. Iure perferendis dolore eos culpa repellat optio
-              magnam, a voluptatem explicabo ut perspiciatis.
-            </CustomText>
+            <Title as="h2">Why Businesses Rely on Us for IT Innovation</Title>
+            <S.ContainerFlex>
+              <S.ImageContainer>
+                <Image
+                  src="/image/banner_about.jpg"
+                  alt="test"
+                  width={600}
+                  height={400}
+                />
+              </S.ImageContainer>
+              <div>
+                <CustomText as="p">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                  tempore corporis tenetur vel! Exercitationem velit maiores
+                  eaque eveniet voluptates reprehenderit doloremque! Asperiores,
+                  atque repudiandae. Fugiat aperiam corporis iusto amet eum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                  eaque eveniet voluptates reprehenderit doloremque! Asperiores,
+                  atque repudiandae. Fugiat aperiam corporis iusto amet eum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                </CustomText>
+                <CustomText as="p">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                  tempore corporis tenetur vel! Exercitationem velit maiores
+                  eaque eveniet voluptates reprehenderit doloremque! Asperiores,
+                  atque repudiandae. Fugiat aperiam corporis iusto amet eum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                  atque repudiandae. Fugiat aperiam corporis iusto amet eum.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+                </CustomText>
+                <LinkItem href="/">Discover Our Services</LinkItem>
+              </div>
+            </S.ContainerFlex>
           </div>
         </div>
-      </section>
+      </S.WhyChooseUs>
     </>
   )
 }
