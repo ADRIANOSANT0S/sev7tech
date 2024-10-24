@@ -8,7 +8,7 @@ import * as S from './styles'
 
 import Banner from '@/Components/Banner'
 import ContactForm from '@/Components/Form'
-import { Title, Text } from '@/Components/Typography'
+import { Title, CustomText } from '@/Components/Typography'
 import CardContactData from '@/Components/Cards/CardContactData'
 
 interface ContactInformation {
@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
             <S.ContactInfos>
               <Title as="h2">{t('contactInformation')}</Title>
-              <Text as="p">{t('description')}</Text>
+              <CustomText as="p">{t('description')}</CustomText>
               <ul>
                 {contactData.map((data) => (
                   <li key={data.id}>

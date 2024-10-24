@@ -74,7 +74,7 @@ export const Footer = () => {
             <Title as="h3">{t('contactUs')}</Title>
             <div>
               <Title as="h4">{t('openingHours')}</Title>
-              <MdOutlineAccessTime />{' '}
+              <BiSolidTimeFive size={16} aria-label="Icon Time" />{' '}
               <CustomText as="span">{t('openingDay')}</CustomText>
             </div>
           </div>
@@ -83,11 +83,11 @@ export const Footer = () => {
               <Title as="h4">{t('contactUs')}</Title>
               <ul>
                 <li>
-                  <FaWhatsapp />
+                  <RiWhatsappFill size={16} aria-label="Icon WhatsApp" />
                   <CustomText as="span">(11) 9 4076-3490</CustomText>
                 </li>
                 <li>
-                  <MdOutlineMail />
+                  <MdEmail size={16} aria-label="Icon E-mail" />
                   <CustomText as="span">company@hotmail.com.br</CustomText>
                 </li>
               </ul>

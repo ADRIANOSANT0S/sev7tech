@@ -15,32 +15,32 @@ const ServicesOffer = ({ params }: { params: { id: string } }) => {
     {
       id: 1,
       children: 'Web develop',
-      url: '/servicesoffer/servicedetails/1'
+      url: '/services/servicedetails/1'
     },
     {
       id: 2,
       children: 'Design UI/UX',
-      url: '/servicesoffer/servicedetails/2'
+      url: '/services/servicedetails/2'
     },
     {
       id: 3,
       children: 'E-commerce Develop',
-      url: '/servicesoffer/servicedetails/3'
+      url: '/services/servicedetails/3'
     },
     {
       id: 4,
       children: 'Process Automation',
-      url: '/servicesoffer/servicedetails/4'
+      url: '/services/servicedetails/4'
     },
     {
       id: 5,
       children: 'ERP Custom',
-      url: '/servicesoffer/servicedetails/5'
+      url: '/services/servicedetails/5'
     },
     {
       id: 6,
       children: 'UP Date Application',
-      url: '/servicesoffer/servicedetails/6'
+      url: '/services/servicedetails/6'
     }
   ]
 
