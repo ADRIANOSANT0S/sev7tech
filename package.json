@@ -1,0 +1,44 @@
+{
+  "name": "sev7tech",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "formik": "^2.4.6",
+    "next": "15.1.2",
+    "next-intl": "^3.24.0",
+    "react": "^19.0.0",
+    "react-confetti": "^6.1.0",
+    "react-dom": "^19.0.0",
+    "react-world-flags": "^1.6.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-world-flags": "^1.6.0",
+    "@types/yup": "^0.32.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "15.1.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5",
+    "typescript-eslint": "^8.6.0"
+  }
+}
